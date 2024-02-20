@@ -33,7 +33,7 @@
             tableLayoutPanel2 = new TableLayoutPanel();
             textBox_username = new TextBox();
             label_password = new Label();
-            textBox_dni = new TextBox();
+            textBox_password = new TextBox();
             label_username = new Label();
             label_codpostal = new Label();
             textBox_codpostal = new TextBox();
@@ -89,7 +89,7 @@
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 65.3211F));
             tableLayoutPanel2.Controls.Add(textBox_username, 1, 0);
             tableLayoutPanel2.Controls.Add(label_password, 0, 1);
-            tableLayoutPanel2.Controls.Add(textBox_dni, 1, 1);
+            tableLayoutPanel2.Controls.Add(textBox_password, 1, 1);
             tableLayoutPanel2.Controls.Add(label_username, 0, 0);
             tableLayoutPanel2.Controls.Add(label_codpostal, 0, 6);
             tableLayoutPanel2.Controls.Add(textBox_codpostal, 1, 6);
@@ -135,13 +135,13 @@
             label_password.TabIndex = 8;
             label_password.Text = "Contraseña*";
             // 
-            // textBox_dni
+            // textBox_password
             // 
-            textBox_dni.Anchor = AnchorStyles.Left;
-            textBox_dni.Location = new Point(192, 35);
-            textBox_dni.Name = "textBox_dni";
-            textBox_dni.Size = new Size(196, 23);
-            textBox_dni.TabIndex = 9;
+            textBox_password.Anchor = AnchorStyles.Left;
+            textBox_password.Location = new Point(192, 35);
+            textBox_password.Name = "textBox_password";
+            textBox_password.Size = new Size(196, 23);
+            textBox_password.TabIndex = 9;
             // 
             // label_username
             // 
@@ -288,7 +288,7 @@
         private Label label_codpostal;
         private TextBox textBox_codpostal;
         private Label label_password;
-        private TextBox textBox_dni;
+        private TextBox textBox_password;
         private Label label_apellido2;
         private TextBox textBox_apellido2;
         private Label label_apellido1;

@@ -1,4 +1,5 @@
-﻿using Microsoft.Data.SqlClient;
+﻿using LogIn;
+using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,11 +31,16 @@ namespace App_Proyecto2Ev_DI_NC
                 SqlCommand cmd = new SqlCommand("SaveClient", connection);
                 cmd.CommandType = CommandType.StoredProcedure;
 
+                //Encriptar la contraseña
+                string encpss = AesCrypt.Encrypt(textBox_password.Text);
+
                 // Asegúrate de que los nombres de los parámetros coincidan con los del procedimiento almacenado
-                cmd.Parameters.AddWithValue("@nameClient", textBox_nombre.Text);
-                cmd.Parameters.AddWithValue("@surname", textBox_apellido1.Text);
-                cmd.Parameters.AddWithValue("@DNI", textBox_DNI.Text);
-                cmd.Parameters.AddWithValue("@CP", textBox_CP.Text);
+                cmd.Parameters.AddWithValue("@username", textBox_username.Text);
+                cmd.Parameters.AddWithValue("@password", encpss);
+                cmd.Parameters.AddWithValue("@nombre", textBox_nombre.Text);
+                cmd.Parameters.AddWithValue("@apellido1", textBox_apellido1.Text);
+                cmd.Parameters.AddWithValue("@apellido2", textBox_apellido2.Text);
+                cmd.Parameters.AddWithValue("@codpostal", textBox_codpostal.Text);
 
                 cmd.ExecuteNonQuery();
 

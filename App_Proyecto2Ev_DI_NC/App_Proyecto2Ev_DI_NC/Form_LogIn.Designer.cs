@@ -138,6 +138,7 @@
             button_login.TabIndex = 6;
             button_login.Text = "Iniciar sesión";
             button_login.UseVisualStyleBackColor = false;
+            button_login.Click += button_login_Click;
             // 
             // button1
             // 
@@ -147,6 +148,7 @@
             button1.TabIndex = 7;
             button1.Text = "Soy un nuevo cliente";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Form_LogIn
             // 

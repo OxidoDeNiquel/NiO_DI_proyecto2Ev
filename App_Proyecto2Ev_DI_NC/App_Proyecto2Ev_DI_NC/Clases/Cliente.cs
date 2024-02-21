@@ -8,21 +8,24 @@ namespace App_Proyecto2Ev_DI_NC.Clases
 {
     internal class Cliente
     {
+        private int id;
         private String nombre;
         private String apellido1;
         private String apellido2;
         private int codPostal;
-        private int id;
-        private int userId;
+        private String username;
+        private String password;
 
-        public Cliente(string nombre, string apellido1, string apellido2, int codPostal, int id, int userId)
+        public Cliente(string nombre, string apellido1, string apellido2, int codPostal, int id, String username, string password)
         {
+
+            this.id = id;
             this.nombre = nombre;
             this.apellido1 = apellido1;
             this.apellido2 = apellido2;
             this.codPostal = codPostal;
-            this.id = id;
-            this.userId = userId;
+            this.username = username;
+            this.password = password;
         }
 
         //GETTERS Y SETTERS
@@ -51,17 +54,44 @@ namespace App_Proyecto2Ev_DI_NC.Clases
             return id;
         }
 
-        public int getUserId()
+        public String getUsername()
         {
-            return userId;
-        }
-        //setter nombre, apellido1, apellido2, codpostal
-
-        public void setUserId(int userId)
-        {
-            this.userId = userId;
+            return username;
         }
 
+        public String getPassword()
+        {
+            return password;
+        }
 
+        public void setNombre(String nombre) 
+        { 
+            this.nombre = nombre;
+        }
+
+        public void setApellido1(String apellido1)
+        {
+            this.apellido1 = apellido1;
+        }
+
+        public void setApellido2(String apellido2)
+        {
+            this.apellido2 = apellido2;
+        }
+
+        public void setCodPostal(int codPostal)
+        {
+            this.codPostal = codPostal;
+        }
+
+        public void setUsername(String username)
+        {
+            this.username = username;
+        }
+
+        public void setPassword(String password)
+        {
+            this.password = password;
+        }
     }
 }

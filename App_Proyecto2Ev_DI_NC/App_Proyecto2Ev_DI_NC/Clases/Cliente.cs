@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace App_Proyecto2Ev_DI_NC.Clases
 {
-    internal class Cliente
+    public class Cliente
     {
         private int id;
         private String nombre;
@@ -16,7 +16,7 @@ namespace App_Proyecto2Ev_DI_NC.Clases
         private String username;
         private String password;
 
-        public Cliente(string nombre, string apellido1, string apellido2, int codPostal, int id, String username, string password)
+        public Cliente(int id, string nombre, string apellido1, string apellido2, int codPostal, String username, string password)
         {
 
             this.id = id;
@@ -28,70 +28,12 @@ namespace App_Proyecto2Ev_DI_NC.Clases
             this.password = password;
         }
 
-        //GETTERS Y SETTERS
-        public String getNombre()
-        {
-            return nombre;
-        }
-
-        public String getApellido1()
-        {
-            return apellido1;
-        }
-
-        public String getApellido2()
-        {
-            return apellido2;
-        }
-
-        public int getCodPostal()
-        {
-            return codPostal;
-        }
-
-        public int getId()
-        {
-            return id;
-        }
-
-        public String getUsername()
-        {
-            return username;
-        }
-
-        public String getPassword()
-        {
-            return password;
-        }
-
-        public void setNombre(String nombre) 
-        { 
-            this.nombre = nombre;
-        }
-
-        public void setApellido1(String apellido1)
-        {
-            this.apellido1 = apellido1;
-        }
-
-        public void setApellido2(String apellido2)
-        {
-            this.apellido2 = apellido2;
-        }
-
-        public void setCodPostal(int codPostal)
-        {
-            this.codPostal = codPostal;
-        }
-
-        public void setUsername(String username)
-        {
-            this.username = username;
-        }
-
-        public void setPassword(String password)
-        {
-            this.password = password;
-        }
+        public int Id { get => id; set => id = value; }
+        public string Nombre { get => nombre; set => nombre = value; }
+        public string Apellido1 { get => apellido1; set => apellido1 = value; }
+        public string Apellido2 { get => apellido2; set => apellido2 = value; }
+        public int CodPostal { get => codPostal; set => codPostal = value; }
+        public string Username { get => username; set => username = value; }
+        public string Password { get => password; set => password = value; }
     }
 }

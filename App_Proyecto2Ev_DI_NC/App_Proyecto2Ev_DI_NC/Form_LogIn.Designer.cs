@@ -32,8 +32,8 @@
             label_login = new Label();
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            textBox_username = new TextBox();
+            textBox_password = new TextBox();
             pictureBox1 = new PictureBox();
             button_login = new Button();
             button1 = new Button();
@@ -49,8 +49,8 @@
             tableLayoutPanel.Controls.Add(label_login, 0, 1);
             tableLayoutPanel.Controls.Add(label1, 0, 2);
             tableLayoutPanel.Controls.Add(label2, 0, 4);
-            tableLayoutPanel.Controls.Add(textBox1, 0, 3);
-            tableLayoutPanel.Controls.Add(textBox2, 0, 5);
+            tableLayoutPanel.Controls.Add(textBox_username, 0, 3);
+            tableLayoutPanel.Controls.Add(textBox_password, 0, 5);
             tableLayoutPanel.Controls.Add(pictureBox1, 0, 0);
             tableLayoutPanel.Controls.Add(button_login, 0, 6);
             tableLayoutPanel.Controls.Add(button1, 0, 7);
@@ -104,19 +104,19 @@
             label2.TabIndex = 2;
             label2.Text = "Contraseña";
             // 
-            // textBox1
+            // textBox_username
             // 
-            textBox1.Location = new Point(3, 207);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(240, 23);
-            textBox1.TabIndex = 3;
+            textBox_username.Location = new Point(3, 207);
+            textBox_username.Name = "textBox_username";
+            textBox_username.Size = new Size(240, 23);
+            textBox_username.TabIndex = 3;
             // 
-            // textBox2
+            // textBox_password
             // 
-            textBox2.Location = new Point(3, 260);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(240, 23);
-            textBox2.TabIndex = 4;
+            textBox_password.Location = new Point(3, 260);
+            textBox_password.Name = "textBox_password";
+            textBox_password.Size = new Size(240, 23);
+            textBox_password.TabIndex = 4;
             // 
             // pictureBox1
             // 
@@ -171,8 +171,8 @@
         private Label label_login;
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox textBox_username;
+        private TextBox textBox_password;
         private PictureBox pictureBox1;
         private Button button_login;
         private Button button1;

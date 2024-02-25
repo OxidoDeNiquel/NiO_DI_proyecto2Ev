@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace App_Proyecto2Ev_DI_NC.Clases
 {
-    internal class Establecimiento
+    public class Establecimiento
     {
         private int id;
         private String name;
@@ -25,11 +25,40 @@ namespace App_Proyecto2Ev_DI_NC.Clases
             this.country = country;
         }
 
-        public int getId() { return id; }
-        public String getName() { return name; }
-        public String getDescription() { return description; }
-        public int getPostalCode() {  return postalCode; }
-        public String getCity() { return city; }
-        public String getCountry() { return country; }
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        public string Description
+        {
+            get { return description; }
+            set { description = value; }
+        }
+
+        public int PostalCode
+        {
+            get { return postalCode; }
+            set { postalCode = value; }
+        }
+
+        public string City
+        {
+            get { return city; }
+            set { city = value; }
+        }
+
+        public string Country
+        {
+            get { return country; }
+            set { country = value; }
+        }
     }
 }

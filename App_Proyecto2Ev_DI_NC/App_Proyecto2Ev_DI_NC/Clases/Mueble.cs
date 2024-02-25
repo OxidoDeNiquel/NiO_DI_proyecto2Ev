@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace App_Proyecto2Ev_DI_NC.Clases
 {
-    internal class Mueble
+    public class Mueble
     {
         private int id;
         private string name;
@@ -25,6 +25,48 @@ namespace App_Proyecto2Ev_DI_NC.Clases
             this.exhibition = exhibition;
             this.store = store;
             this.storeSection = storeSection;
+        }
+
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        public string Type
+        {
+            get { return type; }
+            set { type = value; }
+        }
+
+        public int Establishment
+        {
+            get { return establishment; }
+            set { establishment = value; }
+        }
+
+        public bool Exhibition
+        {
+            get { return exhibition; }
+            set { exhibition = value; }
+        }
+
+        public bool Store
+        {
+            get { return store; }
+            set { store = value; }
+        }
+
+        public string StoreSection
+        {
+            get { return storeSection; }
+            set { storeSection = value; }
         }
 
 

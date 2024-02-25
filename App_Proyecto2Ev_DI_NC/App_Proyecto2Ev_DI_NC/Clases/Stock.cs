@@ -19,5 +19,23 @@ namespace App_Proyecto2Ev_DI_NC.Clases
             this.storeStock = storeStock;
         }
 
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+
+        public int ExhibitionStock
+        {
+            get { return exhibitionStock; }
+            set { exhibitionStock = value; }
+        }
+
+        public int StoreStock
+        {
+            get { return storeStock; }
+            set { storeStock = value; }
+        }
+
     }
 }

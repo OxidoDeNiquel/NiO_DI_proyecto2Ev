@@ -11,12 +11,14 @@ namespace App_Proyecto2Ev_DI_NC.Clases
         private int id;
         private string name;
         private string type;
-        private int establishment;
+        private string establishment;
         private Boolean exhibition;
         private Boolean store;
         private String storeSection;
+        private int exhibitionStock;
+        private int storeStock;
 
-        public Mueble(int id, string name, string type, int establishment, bool exhibition, bool store, string storeSection)
+        public Mueble(int id, string name, string type, string establishment, bool exhibition, bool store, string storeSection, int exhibitionStock, int storeStock)
         {
             this.id = id;
             this.name = name;
@@ -25,6 +27,9 @@ namespace App_Proyecto2Ev_DI_NC.Clases
             this.exhibition = exhibition;
             this.store = store;
             this.storeSection = storeSection;
+            this.exhibitionStock = exhibitionStock;
+            this.storeStock = storeStock;
+
         }
 
         public int Id
@@ -45,7 +50,7 @@ namespace App_Proyecto2Ev_DI_NC.Clases
             set { type = value; }
         }
 
-        public int Establishment
+        public string Establishment
         {
             get { return establishment; }
             set { establishment = value; }
@@ -68,7 +73,16 @@ namespace App_Proyecto2Ev_DI_NC.Clases
             get { return storeSection; }
             set { storeSection = value; }
         }
-
+        public int StoreStock
+        {
+            get { return storeStock; }
+            set { storeStock = value; }
+        }
+        public int ExhibitionStock
+        {
+            get { return exhibitionStock; }
+            set { exhibitionStock = value; }
+        }
 
     }
 }

@@ -31,27 +31,26 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_C_PagPrincipal));
             tableLayoutPanel1 = new TableLayoutPanel();
             pictureBox_logo = new PictureBox();
-            this.tableLayoutPanel2 = new TableLayoutPanel();
-            this.pictureBox_perfil = new PictureBox();
-            this.pictureBox_cesta = new PictureBox();
+            tableLayoutPanel2 = new TableLayoutPanel();
+            pictureBox_perfil = new PictureBox();
+            pictureBox_cesta = new PictureBox();
             tableLayoutPanel3 = new TableLayoutPanel();
-            button_fsalon = new Button();
             button_fcocina = new Button();
-            button_fbano = new Button();
             button_fsde = new Button();
+            button_fsalon = new Button();
+            button_fbano = new Button();
+            button_fdorm = new Button();
             tableLayoutPanel4 = new TableLayoutPanel();
             dataGridView_muebles = new DataGridView();
-            tableLayoutPanel5 = new TableLayoutPanel();
-            button5 = new Button();
+            tableLayoutPanel6 = new TableLayoutPanel();
             tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox_logo).BeginInit();
-            this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)this.pictureBox_perfil).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)this.pictureBox_cesta).BeginInit();
+            tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_perfil).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_cesta).BeginInit();
             tableLayoutPanel3.SuspendLayout();
             tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView_muebles).BeginInit();
-            tableLayoutPanel5.SuspendLayout();
             SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -60,8 +59,9 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 16.62371F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 83.37629F));
             tableLayoutPanel1.Controls.Add(pictureBox_logo, 0, 0);
-            tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 0);
+            tableLayoutPanel1.Controls.Add(tableLayoutPanel2, 1, 0);
             tableLayoutPanel1.Controls.Add(tableLayoutPanel4, 1, 1);
+            tableLayoutPanel1.Controls.Add(tableLayoutPanel6, 0, 1);
             tableLayoutPanel1.Location = new Point(12, 12);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 2;
@@ -84,54 +84,54 @@
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 86F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7F));
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox_perfil, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox_cesta, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(tableLayoutPanel3, 0, 1);
-            this.tableLayoutPanel2.Location = new Point(131, 3);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            this.tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new Size(642, 71);
-            this.tableLayoutPanel2.TabIndex = 2;
+            tableLayoutPanel2.ColumnCount = 3;
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 86F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7F));
+            tableLayoutPanel2.Controls.Add(pictureBox_perfil, 1, 0);
+            tableLayoutPanel2.Controls.Add(pictureBox_cesta, 2, 0);
+            tableLayoutPanel2.Controls.Add(tableLayoutPanel3, 0, 1);
+            tableLayoutPanel2.Location = new Point(131, 3);
+            tableLayoutPanel2.Name = "tableLayoutPanel2";
+            tableLayoutPanel2.RowCount = 2;
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel2.Size = new Size(642, 71);
+            tableLayoutPanel2.TabIndex = 2;
             // 
             // pictureBox_perfil
             // 
-            this.pictureBox_perfil.Image = Properties.Resources.perfil_icono;
-            this.pictureBox_perfil.Location = new Point(555, 3);
-            this.pictureBox_perfil.Name = "pictureBox_perfil";
-            this.pictureBox_perfil.Size = new Size(38, 29);
-            this.pictureBox_perfil.SizeMode = PictureBoxSizeMode.Zoom;
-            this.pictureBox_perfil.TabIndex = 0;
-            this.pictureBox_perfil.TabStop = false;
+            pictureBox_perfil.Image = Properties.Resources.perfil_icono;
+            pictureBox_perfil.Location = new Point(555, 3);
+            pictureBox_perfil.Name = "pictureBox_perfil";
+            pictureBox_perfil.Size = new Size(38, 29);
+            pictureBox_perfil.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox_perfil.TabIndex = 0;
+            pictureBox_perfil.TabStop = false;
             // 
             // pictureBox_cesta
             // 
-            this.pictureBox_cesta.Image = (Image)resources.GetObject("pictureBox_cesta.Image");
-            this.pictureBox_cesta.Location = new Point(599, 3);
-            this.pictureBox_cesta.Name = "pictureBox_cesta";
-            this.pictureBox_cesta.Size = new Size(40, 29);
-            this.pictureBox_cesta.SizeMode = PictureBoxSizeMode.Zoom;
-            this.pictureBox_cesta.TabIndex = 1;
-            this.pictureBox_cesta.TabStop = false;
+            pictureBox_cesta.Image = (Image)resources.GetObject("pictureBox_cesta.Image");
+            pictureBox_cesta.Location = new Point(599, 3);
+            pictureBox_cesta.Name = "pictureBox_cesta";
+            pictureBox_cesta.Size = new Size(40, 29);
+            pictureBox_cesta.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox_cesta.TabIndex = 1;
+            pictureBox_cesta.TabStop = false;
             // 
             // tableLayoutPanel3
             // 
-            tableLayoutPanel3.ColumnCount = 4;
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25.0000038F));
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 24.9999981F));
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 24.9999981F));
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25.0000038F));
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel3.Controls.Add(button_fsalon, 0, 0);
+            tableLayoutPanel3.ColumnCount = 5;
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.9999981F));
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 19.9999981F));
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20.0000038F));
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
             tableLayoutPanel3.Controls.Add(button_fcocina, 1, 0);
-            tableLayoutPanel3.Controls.Add(button_fbano, 2, 0);
             tableLayoutPanel3.Controls.Add(button_fsde, 3, 0);
+            tableLayoutPanel3.Controls.Add(button_fsalon, 4, 0);
+            tableLayoutPanel3.Controls.Add(button_fbano, 0, 0);
+            tableLayoutPanel3.Controls.Add(button_fdorm, 2, 0);
             tableLayoutPanel3.Location = new Point(3, 38);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 1;
@@ -139,52 +139,61 @@
             tableLayoutPanel3.Size = new Size(546, 30);
             tableLayoutPanel3.TabIndex = 2;
             // 
-            // button_fsalon
-            // 
-            button_fsalon.BackColor = Color.LightBlue;
-            button_fsalon.Location = new Point(3, 3);
-            button_fsalon.Name = "button_fsalon";
-            button_fsalon.Size = new Size(130, 23);
-            button_fsalon.TabIndex = 0;
-            button_fsalon.Text = "Salón";
-            button_fsalon.UseVisualStyleBackColor = false;
-            // 
             // button_fcocina
             // 
             button_fcocina.BackColor = Color.LightBlue;
-            button_fcocina.Location = new Point(139, 3);
+            button_fcocina.Location = new Point(112, 3);
             button_fcocina.Name = "button_fcocina";
-            button_fcocina.Size = new Size(130, 23);
+            button_fcocina.Size = new Size(103, 23);
             button_fcocina.TabIndex = 1;
             button_fcocina.Text = "Cocina";
             button_fcocina.UseVisualStyleBackColor = false;
             // 
+            // button_fsde
+            // 
+            button_fsde.BackColor = Color.LightBlue;
+            button_fsde.Location = new Point(330, 3);
+            button_fsde.Name = "button_fsde";
+            button_fsde.Size = new Size(103, 23);
+            button_fsde.TabIndex = 3;
+            button_fsde.Text = "Sala de estar";
+            button_fsde.UseVisualStyleBackColor = false;
+            // 
+            // button_fsalon
+            // 
+            button_fsalon.BackColor = Color.LightBlue;
+            button_fsalon.Location = new Point(439, 3);
+            button_fsalon.Name = "button_fsalon";
+            button_fsalon.Size = new Size(104, 23);
+            button_fsalon.TabIndex = 0;
+            button_fsalon.Text = "Salón";
+            button_fsalon.UseVisualStyleBackColor = false;
+            // 
             // button_fbano
             // 
             button_fbano.BackColor = Color.LightBlue;
-            button_fbano.Location = new Point(275, 3);
+            button_fbano.Location = new Point(3, 3);
             button_fbano.Name = "button_fbano";
-            button_fbano.Size = new Size(130, 23);
+            button_fbano.Size = new Size(103, 23);
             button_fbano.TabIndex = 2;
             button_fbano.Text = "Baño";
             button_fbano.UseVisualStyleBackColor = false;
             // 
-            // button_fsde
+            // button_fdorm
             // 
-            button_fsde.BackColor = Color.LightBlue;
-            button_fsde.Location = new Point(411, 3);
-            button_fsde.Name = "button_fsde";
-            button_fsde.Size = new Size(132, 23);
-            button_fsde.TabIndex = 3;
-            button_fsde.Text = "Sala de estar";
-            button_fsde.UseVisualStyleBackColor = false;
+            button_fdorm.BackColor = Color.LightBlue;
+            button_fdorm.Location = new Point(221, 3);
+            button_fdorm.Name = "button_fdorm";
+            button_fdorm.Size = new Size(103, 23);
+            button_fdorm.TabIndex = 4;
+            button_fdorm.Text = "Dormitorio";
+            button_fdorm.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel4
             // 
             tableLayoutPanel4.ColumnCount = 1;
             tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel4.Controls.Add(dataGridView_muebles, 0, 0);
-            tableLayoutPanel4.Controls.Add(tableLayoutPanel5, 0, 1);
             tableLayoutPanel4.Location = new Point(131, 80);
             tableLayoutPanel4.Name = "tableLayoutPanel4";
             tableLayoutPanel4.RowCount = 2;
@@ -204,28 +213,22 @@
             dataGridView_muebles.Size = new Size(636, 300);
             dataGridView_muebles.TabIndex = 2;
             // 
-            // tableLayoutPanel5
+            // tableLayoutPanel6
             // 
-            tableLayoutPanel5.ColumnCount = 2;
-            tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 75F));
-            tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tableLayoutPanel5.Controls.Add(button5, 1, 0);
-            tableLayoutPanel5.Location = new Point(3, 309);
-            tableLayoutPanel5.Name = "tableLayoutPanel5";
-            tableLayoutPanel5.RowCount = 1;
-            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel5.Size = new Size(636, 31);
-            tableLayoutPanel5.TabIndex = 3;
-            // 
-            // button5
-            // 
-            button5.BackColor = Color.LightBlue;
-            button5.Location = new Point(480, 3);
-            button5.Name = "button5";
-            button5.Size = new Size(153, 25);
-            button5.TabIndex = 0;
-            button5.Text = "Añadir al pedido";
-            button5.UseVisualStyleBackColor = false;
+            tableLayoutPanel6.ColumnCount = 1;
+            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel6.Location = new Point(3, 80);
+            tableLayoutPanel6.Name = "tableLayoutPanel6";
+            tableLayoutPanel6.RowCount = 4;
+            tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
+            tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 70F));
+            tableLayoutPanel6.Size = new Size(122, 337);
+            tableLayoutPanel6.TabIndex = 4;
             // 
             // Form_C_PagPrincipal
             // 
@@ -238,13 +241,12 @@
             Text = "Form_C_PagPrincipal";
             tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox_logo).EndInit();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)this.pictureBox_perfil).EndInit();
-            ((System.ComponentModel.ISupportInitialize)this.pictureBox_cesta).EndInit();
+            tableLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox_perfil).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_cesta).EndInit();
             tableLayoutPanel3.ResumeLayout(false);
             tableLayoutPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView_muebles).EndInit();
-            tableLayoutPanel5.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -262,7 +264,7 @@
         private Button button_fsde;
         private TableLayoutPanel tableLayoutPanel4;
         private DataGridView dataGridView_muebles;
-        private TableLayoutPanel tableLayoutPanel5;
-        private Button button5;
+        private Button button_fdorm;
+        private TableLayoutPanel tableLayoutPanel6;
     }
 }

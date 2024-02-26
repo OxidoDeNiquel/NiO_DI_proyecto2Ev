@@ -32,20 +32,20 @@
             tableLayoutPanel1 = new TableLayoutPanel();
             pictureBox_logo = new PictureBox();
             tableLayoutPanel2 = new TableLayoutPanel();
+            pictureBox_perfil = new PictureBox();
+            label_titulo = new Label();
             tableLayoutPanel4 = new TableLayoutPanel();
             dataGridView_muebles = new DataGridView();
             tableLayoutPanel5 = new TableLayoutPanel();
-            button_delete = new Button();
             button_insert = new Button();
-            pictureBox_perfil = new PictureBox();
-            label_titulo = new Label();
+            button_delete = new Button();
             tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox_logo).BeginInit();
             tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_perfil).BeginInit();
             tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView_muebles).BeginInit();
             tableLayoutPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox_perfil).BeginInit();
             SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -91,6 +91,29 @@
             tableLayoutPanel2.Size = new Size(642, 71);
             tableLayoutPanel2.TabIndex = 2;
             // 
+            // pictureBox_perfil
+            // 
+            pictureBox_perfil.Image = Properties.Resources.perfil_icono;
+            pictureBox_perfil.Location = new Point(605, 3);
+            pictureBox_perfil.Name = "pictureBox_perfil";
+            pictureBox_perfil.Size = new Size(34, 29);
+            pictureBox_perfil.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox_perfil.TabIndex = 1;
+            pictureBox_perfil.TabStop = false;
+            pictureBox_perfil.Click += pictureBox_perfil_Click;
+            // 
+            // label_titulo
+            // 
+            label_titulo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label_titulo.AutoSize = true;
+            label_titulo.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label_titulo.Location = new Point(3, 0);
+            label_titulo.Name = "label_titulo";
+            label_titulo.Size = new Size(596, 35);
+            label_titulo.TabIndex = 2;
+            label_titulo.Text = "Administrador";
+            label_titulo.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // tableLayoutPanel4
             // 
             tableLayoutPanel4.ColumnCount = 1;
@@ -130,18 +153,6 @@
             tableLayoutPanel5.Size = new Size(636, 31);
             tableLayoutPanel5.TabIndex = 3;
             // 
-            // button_delete
-            // 
-            button_delete.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button_delete.BackColor = Color.FromArgb(255, 192, 192);
-            button_delete.ForeColor = SystemColors.ControlText;
-            button_delete.Location = new Point(3, 3);
-            button_delete.Name = "button_delete";
-            button_delete.Size = new Size(312, 25);
-            button_delete.TabIndex = 0;
-            button_delete.Text = "Eliminar articulo";
-            button_delete.UseVisualStyleBackColor = false;
-            // 
             // button_insert
             // 
             button_insert.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
@@ -154,32 +165,23 @@
             button_insert.UseVisualStyleBackColor = false;
             button_insert.Click += button_insert_Click;
             // 
-            // pictureBox_perfil
+            // button_delete
             // 
-            pictureBox_perfil.Image = Properties.Resources.perfil_icono;
-            pictureBox_perfil.Location = new Point(605, 3);
-            pictureBox_perfil.Name = "pictureBox_perfil";
-            pictureBox_perfil.Size = new Size(34, 29);
-            pictureBox_perfil.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox_perfil.TabIndex = 1;
-            pictureBox_perfil.TabStop = false;
-            // 
-            // label_titulo
-            // 
-            label_titulo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            label_titulo.AutoSize = true;
-            label_titulo.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label_titulo.Location = new Point(3, 0);
-            label_titulo.Name = "label_titulo";
-            label_titulo.Size = new Size(596, 35);
-            label_titulo.TabIndex = 2;
-            label_titulo.Text = "Administrador";
-            label_titulo.TextAlign = ContentAlignment.MiddleCenter;
+            button_delete.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button_delete.BackColor = Color.FromArgb(255, 192, 192);
+            button_delete.ForeColor = SystemColors.ControlText;
+            button_delete.Location = new Point(3, 3);
+            button_delete.Name = "button_delete";
+            button_delete.Size = new Size(312, 25);
+            button_delete.TabIndex = 0;
+            button_delete.Text = "Eliminar articulo";
+            button_delete.UseVisualStyleBackColor = false;
             // 
             // Form_PagAdmin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
             ClientSize = new Size(800, 450);
             Controls.Add(tableLayoutPanel1);
             Name = "Form_PagAdmin";
@@ -188,10 +190,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox_logo).EndInit();
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_perfil).EndInit();
             tableLayoutPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView_muebles).EndInit();
             tableLayoutPanel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox_perfil).EndInit();
             ResumeLayout(false);
         }
 

@@ -13,6 +13,9 @@
     <Compile Update="Form_PagAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Form_PerfilAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Form_SignIn.cs">
       <SubType>Form</SubType>
     </Compile>

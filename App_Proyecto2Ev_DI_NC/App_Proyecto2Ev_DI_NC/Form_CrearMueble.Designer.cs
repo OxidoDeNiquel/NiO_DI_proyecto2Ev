@@ -31,19 +31,20 @@
             tableLayoutPanel1 = new TableLayoutPanel();
             label_title = new Label();
             tableLayoutPanel2 = new TableLayoutPanel();
+            label_nombre = new Label();
+            label_tipo = new Label();
+            label_establecimiento = new Label();
+            textBox_nombre = new TextBox();
+            checkBox_expo = new CheckBox();
+            button_crear = new Button();
+            button_cancelar = new Button();
+            label_s_almacen = new Label();
+            textBox_s_almacen = new TextBox();
+            comboBox_tipo = new ComboBox();
+            comboBox_establecimiento = new ComboBox();
             pictureBox_logo = new PictureBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
+            label_stock = new Label();
+            textBox_stock = new TextBox();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox_logo).BeginInit();
@@ -85,18 +86,19 @@
             tableLayoutPanel2.ColumnCount = 2;
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 34.6789F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 65.3211F));
-            tableLayoutPanel2.Controls.Add(label1, 0, 0);
-            tableLayoutPanel2.Controls.Add(label2, 0, 1);
-            tableLayoutPanel2.Controls.Add(label3, 0, 2);
-            tableLayoutPanel2.Controls.Add(label4, 0, 3);
-            tableLayoutPanel2.Controls.Add(label5, 0, 4);
-            tableLayoutPanel2.Controls.Add(label6, 0, 5);
-            tableLayoutPanel2.Controls.Add(textBox1, 1, 0);
-            tableLayoutPanel2.Controls.Add(textBox2, 1, 1);
-            tableLayoutPanel2.Controls.Add(textBox3, 1, 2);
-            tableLayoutPanel2.Controls.Add(textBox4, 1, 3);
-            tableLayoutPanel2.Controls.Add(textBox5, 1, 4);
-            tableLayoutPanel2.Controls.Add(textBox6, 1, 5);
+            tableLayoutPanel2.Controls.Add(label_nombre, 0, 0);
+            tableLayoutPanel2.Controls.Add(label_tipo, 0, 1);
+            tableLayoutPanel2.Controls.Add(label_establecimiento, 0, 2);
+            tableLayoutPanel2.Controls.Add(textBox_nombre, 1, 0);
+            tableLayoutPanel2.Controls.Add(checkBox_expo, 1, 4);
+            tableLayoutPanel2.Controls.Add(button_crear, 1, 8);
+            tableLayoutPanel2.Controls.Add(button_cancelar, 0, 8);
+            tableLayoutPanel2.Controls.Add(comboBox_tipo, 1, 1);
+            tableLayoutPanel2.Controls.Add(comboBox_establecimiento, 1, 2);
+            tableLayoutPanel2.Controls.Add(label_s_almacen, 0, 5);
+            tableLayoutPanel2.Controls.Add(textBox_s_almacen, 1, 5);
+            tableLayoutPanel2.Controls.Add(label_stock, 0, 6);
+            tableLayoutPanel2.Controls.Add(textBox_stock, 1, 6);
             tableLayoutPanel2.Location = new Point(3, 130);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 9;
@@ -112,6 +114,121 @@
             tableLayoutPanel2.Size = new Size(545, 280);
             tableLayoutPanel2.TabIndex = 0;
             // 
+            // label_nombre
+            // 
+            label_nombre.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            label_nombre.AutoSize = true;
+            label_nombre.BackColor = Color.White;
+            label_nombre.Location = new Point(130, 0);
+            label_nombre.Name = "label_nombre";
+            label_nombre.Size = new Size(56, 31);
+            label_nombre.TabIndex = 0;
+            label_nombre.Text = "Nombre*";
+            label_nombre.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label_tipo
+            // 
+            label_tipo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            label_tipo.AutoSize = true;
+            label_tipo.BackColor = Color.White;
+            label_tipo.Location = new Point(151, 31);
+            label_tipo.Name = "label_tipo";
+            label_tipo.Size = new Size(35, 31);
+            label_tipo.TabIndex = 1;
+            label_tipo.Text = "Tipo*";
+            label_tipo.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label_establecimiento
+            // 
+            label_establecimiento.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            label_establecimiento.AutoSize = true;
+            label_establecimiento.BackColor = Color.White;
+            label_establecimiento.Location = new Point(90, 62);
+            label_establecimiento.Name = "label_establecimiento";
+            label_establecimiento.Size = new Size(96, 31);
+            label_establecimiento.TabIndex = 2;
+            label_establecimiento.Text = "Establecimiento*";
+            label_establecimiento.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // textBox_nombre
+            // 
+            textBox_nombre.Location = new Point(192, 3);
+            textBox_nombre.Name = "textBox_nombre";
+            textBox_nombre.Size = new Size(193, 23);
+            textBox_nombre.TabIndex = 6;
+            // 
+            // checkBox_expo
+            // 
+            checkBox_expo.Anchor = AnchorStyles.Left;
+            checkBox_expo.AutoSize = true;
+            checkBox_expo.Location = new Point(192, 130);
+            checkBox_expo.Name = "checkBox_expo";
+            checkBox_expo.Size = new Size(83, 19);
+            checkBox_expo.TabIndex = 12;
+            checkBox_expo.Text = "Exposición";
+            checkBox_expo.UseVisualStyleBackColor = true;
+            // 
+            // button_crear
+            // 
+            button_crear.Anchor = AnchorStyles.Left;
+            button_crear.BackColor = Color.LightBlue;
+            button_crear.Location = new Point(192, 252);
+            button_crear.Name = "button_crear";
+            button_crear.Size = new Size(193, 23);
+            button_crear.TabIndex = 14;
+            button_crear.Text = "Crear mueble";
+            button_crear.UseVisualStyleBackColor = false;
+            button_crear.Click += button_crear_Click;
+            // 
+            // button_cancelar
+            // 
+            button_cancelar.Anchor = AnchorStyles.Right;
+            button_cancelar.Location = new Point(91, 252);
+            button_cancelar.Name = "button_cancelar";
+            button_cancelar.Size = new Size(95, 23);
+            button_cancelar.TabIndex = 15;
+            button_cancelar.Text = "Cancelar";
+            button_cancelar.UseVisualStyleBackColor = true;
+            button_cancelar.Click += button_cancelar_Click;
+            // 
+            // label_s_almacen
+            // 
+            label_s_almacen.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
+            label_s_almacen.AutoSize = true;
+            label_s_almacen.BackColor = Color.White;
+            label_s_almacen.Location = new Point(88, 155);
+            label_s_almacen.Name = "label_s_almacen";
+            label_s_almacen.Size = new Size(98, 31);
+            label_s_almacen.TabIndex = 5;
+            label_s_almacen.Text = "Sección Almacén";
+            label_s_almacen.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // textBox_s_almacen
+            // 
+            textBox_s_almacen.Location = new Point(192, 158);
+            textBox_s_almacen.Name = "textBox_s_almacen";
+            textBox_s_almacen.Size = new Size(193, 23);
+            textBox_s_almacen.TabIndex = 11;
+            textBox_s_almacen.TextChanged += textBox6_TextChanged;
+            // 
+            // comboBox_tipo
+            // 
+            comboBox_tipo.FormattingEnabled = true;
+            comboBox_tipo.Items.AddRange(new object[] { "Baño", "Cocina", "Dormitorio", "Salón", "Sala de estar" });
+            comboBox_tipo.Location = new Point(192, 34);
+            comboBox_tipo.Name = "comboBox_tipo";
+            comboBox_tipo.Size = new Size(193, 23);
+            comboBox_tipo.TabIndex = 16;
+            // 
+            // comboBox_establecimiento
+            // 
+            comboBox_establecimiento.FormattingEnabled = true;
+            comboBox_establecimiento.Items.AddRange(new object[] { "Barcelona", "Madrid", "Zaragoza" });
+            comboBox_establecimiento.Location = new Point(192, 65);
+            comboBox_establecimiento.Name = "comboBox_establecimiento";
+            comboBox_establecimiento.Size = new Size(193, 23);
+            comboBox_establecimiento.TabIndex = 17;
+            // 
             // pictureBox_logo
             // 
             pictureBox_logo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
@@ -123,119 +240,22 @@
             pictureBox_logo.TabIndex = 1;
             pictureBox_logo.TabStop = false;
             // 
-            // label1
+            // label_stock
             // 
-            label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
-            label1.AutoSize = true;
-            label1.BackColor = Color.White;
-            label1.Location = new Point(148, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(38, 31);
-            label1.TabIndex = 0;
-            label1.Text = "label1";
-            label1.TextAlign = ContentAlignment.MiddleCenter;
+            label_stock.Anchor = AnchorStyles.Right;
+            label_stock.AutoSize = true;
+            label_stock.Location = new Point(150, 194);
+            label_stock.Name = "label_stock";
+            label_stock.Size = new Size(36, 15);
+            label_stock.TabIndex = 18;
+            label_stock.Text = "Stock";
             // 
-            // label2
+            // textBox_stock
             // 
-            label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
-            label2.AutoSize = true;
-            label2.BackColor = Color.White;
-            label2.Location = new Point(148, 31);
-            label2.Name = "label2";
-            label2.Size = new Size(38, 31);
-            label2.TabIndex = 1;
-            label2.Text = "label2";
-            label2.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            label3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
-            label3.AutoSize = true;
-            label3.BackColor = Color.White;
-            label3.Location = new Point(148, 62);
-            label3.Name = "label3";
-            label3.Size = new Size(38, 31);
-            label3.TabIndex = 2;
-            label3.Text = "label3";
-            label3.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            label4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
-            label4.AutoSize = true;
-            label4.BackColor = Color.White;
-            label4.Location = new Point(148, 93);
-            label4.Name = "label4";
-            label4.Size = new Size(38, 31);
-            label4.TabIndex = 3;
-            label4.Text = "label4";
-            label4.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            label5.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
-            label5.AutoSize = true;
-            label5.BackColor = Color.White;
-            label5.Location = new Point(148, 124);
-            label5.Name = "label5";
-            label5.Size = new Size(38, 31);
-            label5.TabIndex = 4;
-            label5.Text = "label5";
-            label5.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            label6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
-            label6.AutoSize = true;
-            label6.BackColor = Color.White;
-            label6.Location = new Point(148, 155);
-            label6.Name = "label6";
-            label6.Size = new Size(38, 31);
-            label6.TabIndex = 5;
-            label6.Text = "label6";
-            label6.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(192, 3);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 6;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(192, 34);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 7;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(192, 65);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 8;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(192, 96);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 23);
-            textBox4.TabIndex = 9;
-            // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(192, 127);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(100, 23);
-            textBox5.TabIndex = 10;
-            // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(192, 158);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(100, 23);
-            textBox6.TabIndex = 11;
+            textBox_stock.Location = new Point(192, 189);
+            textBox_stock.Name = "textBox_stock";
+            textBox_stock.Size = new Size(193, 23);
+            textBox_stock.TabIndex = 19;
             // 
             // Form_CrearMueble
             // 
@@ -260,17 +280,19 @@
         private Label label_title;
         private TableLayoutPanel tableLayoutPanel2;
         private PictureBox pictureBox_logo;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private Label label_nombre;
+        private Label label_tipo;
+        private Label label_establecimiento;
+        private Label label_s_almacen;
+        private TextBox textBox_nombre;
         private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
+        private TextBox textBox_s_almacen;
+        private CheckBox checkBox_expo;
+        private Button button_crear;
+        private Button button_cancelar;
+        private ComboBox comboBox_tipo;
+        private ComboBox comboBox_establecimiento;
+        private Label label_stock;
+        private TextBox textBox_stock;
     }
 }

@@ -49,14 +49,24 @@ namespace App_Proyecto2Ev_DI_NC
                                         reader["Apellido2"].ToString(),
                                         Convert.ToInt32(reader["CodPostal"]),
                                         reader["Usuario"].ToString(),
-                                        AesCrypt.Decrypt( reader["Contraseña"].ToString())
+                                        AesCrypt.Decrypt( reader["Contraseña"].ToString()),
+                                        reader["Tipo"].ToString()
                                     );
 
                                     if(result.Password.Equals(textBox_password.Text))
                                     {
-                                        Form_C_PagPrincipal pagPrincipal = new Form_C_PagPrincipal();
-                                        pagPrincipal.Show();
-                                        this.Visible = false;
+                                        if (result.Tipo.Equals("admin"))
+                                        {
+                                            Form_PagAdmin form_PagAdmin = new Form_PagAdmin();
+                                            form_PagAdmin.Show();
+                                            this.Visible = false;
+                                        }
+                                        else
+                                        {
+                                            Form_C_PagPrincipal pagPrincipal = new Form_C_PagPrincipal();
+                                            pagPrincipal.Show();
+                                            this.Visible = false;
+                                        }
                                     }
                                     else
                                     {

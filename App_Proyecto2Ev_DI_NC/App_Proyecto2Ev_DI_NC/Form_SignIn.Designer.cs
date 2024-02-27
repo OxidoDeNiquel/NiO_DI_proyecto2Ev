@@ -140,6 +140,7 @@
             textBox_password.Anchor = AnchorStyles.Left;
             textBox_password.Location = new Point(192, 35);
             textBox_password.Name = "textBox_password";
+            textBox_password.PasswordChar = '*';
             textBox_password.Size = new Size(196, 23);
             textBox_password.TabIndex = 9;
             // 
@@ -237,6 +238,7 @@
             button_cancelar.TabIndex = 13;
             button_cancelar.Text = "Cancelar";
             button_cancelar.UseVisualStyleBackColor = true;
+            button_cancelar.Click += button_cancelar_Click;
             // 
             // button_crear
             // 
@@ -269,6 +271,7 @@
             ClientSize = new Size(575, 467);
             Controls.Add(tableLayoutPanel1);
             Name = "Form_SignIn";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form_SignIn";
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();

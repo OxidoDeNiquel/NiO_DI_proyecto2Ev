@@ -78,3 +78,5 @@ C:\Users\Alumno\Documents\GitHub\NiO_DI_proyecto2Ev\App_Proyecto2Ev_DI_NC\App_Pr
 C:\Users\Alumno\Documents\GitHub\NiO_DI_proyecto2Ev\App_Proyecto2Ev_DI_NC\App_Proyecto2Ev_DI_NC\obj\Debug\net6.0-windows\App_Proyecto2Ev_DI_NC.pdb
 C:\Users\Alumno\Documents\GitHub\NiO_DI_proyecto2Ev\App_Proyecto2Ev_DI_NC\App_Proyecto2Ev_DI_NC\obj\Debug\net6.0-windows\App_Proyecto2Ev_DI_NC.genruntimeconfig.cache
 C:\Users\Alumno\Documents\GitHub\NiO_DI_proyecto2Ev\App_Proyecto2Ev_DI_NC\App_Proyecto2Ev_DI_NC\obj\Debug\net6.0-windows\ref\App_Proyecto2Ev_DI_NC.dll
+C:\Users\Alumno\Documents\GitHub\NiO_DI_proyecto2Ev\App_Proyecto2Ev_DI_NC\App_Proyecto2Ev_DI_NC\obj\Debug\net6.0-windows\App_Proyecto2Ev_DI_NC.Form_ActualizarMueble.resources
+C:\Users\Alumno\Documents\GitHub\NiO_DI_proyecto2Ev\App_Proyecto2Ev_DI_NC\App_Proyecto2Ev_DI_NC\obj\Debug\net6.0-windows\App_Proyecto2Ev_DI_NC.Form_PerfilCliente.resources

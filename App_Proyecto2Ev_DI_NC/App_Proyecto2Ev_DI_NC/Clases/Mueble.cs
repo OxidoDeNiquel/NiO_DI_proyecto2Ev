@@ -6,36 +6,22 @@ using System.Threading.Tasks;
 
 namespace App_Proyecto2Ev_DI_NC.Clases
 {
-    public class Mueble
+    public class Mueble : Producto
     {
-        private int id;
         private string name;
         private string type;
         private string establishment;
         private Boolean exhibition;
-        private Boolean store;
         private String storeSection;
-        private int exhibitionStock;
-        private int storeStock;
 
-        public Mueble(int id, string name, string type, string establishment, bool exhibition, bool store, string storeSection, int exhibitionStock, int storeStock)
+        public Mueble(int id, int stock, double price, string name, string type, string establishment, bool exhibition, string storeSection)
+            : base(id, stock, price)
         {
-            this.id = id;
             this.name = name;
             this.type = type;
             this.establishment = establishment;
             this.exhibition = exhibition;
-            this.store = store;
             this.storeSection = storeSection;
-            this.exhibitionStock = exhibitionStock;
-            this.storeStock = storeStock;
-
-        }
-
-        public int Id
-        {
-            get { return id; }
-            set { id = value; }
         }
 
         public string Name
@@ -62,27 +48,10 @@ namespace App_Proyecto2Ev_DI_NC.Clases
             set { exhibition = value; }
         }
 
-        public bool Store
-        {
-            get { return store; }
-            set { store = value; }
-        }
-
         public string StoreSection
         {
             get { return storeSection; }
             set { storeSection = value; }
         }
-        public int StoreStock
-        {
-            get { return storeStock; }
-            set { storeStock = value; }
-        }
-        public int ExhibitionStock
-        {
-            get { return exhibitionStock; }
-            set { exhibitionStock = value; }
-        }
-
     }
 }

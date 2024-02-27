@@ -19,6 +19,7 @@ namespace App_Proyecto2Ev_DI_NC
         {
             InitializeComponent();
             loadData();
+            dataGridView_muebles.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
         }
 
         private void loadData()
@@ -30,7 +31,7 @@ namespace App_Proyecto2Ev_DI_NC
                     connection.Open();
 
                     // Consulta SQL para obtener todos los muebles
-                    string selectQuery = "SELECT Nombre, Tipo, Establecimiento, Exposicion AS [Exposición], Seccion_almacen AS [Sección Almacen], Stock FROM Muebles";
+                    string selectQuery = "SELECT Nombre, Tipo, Establecimiento, Exposicion AS [Exposición], Seccion_almacen AS [Sección Almacen], Stock, Precio FROM Muebles";
 
                     using (SqlCommand cmd = new SqlCommand(selectQuery, connection))
                     {
@@ -51,6 +52,282 @@ namespace App_Proyecto2Ev_DI_NC
                 MessageBox.Show($"Error al cargar los datos: {ex.Message}");
                 throw;
             }
+        }
+
+        private void button_fbano_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    // Consulta SQL para obtener todos los muebles
+                    string selectQuery = "SELECT Nombre, Tipo, Establecimiento, Exposicion AS [Exposición], Seccion_almacen AS [Sección Almacen], Stock, Precio FROM Muebles WHERE Tipo = 'Baño'";
+
+                    using (SqlCommand cmd = new SqlCommand(selectQuery, connection))
+                    {
+                        // Utilizar un SqlDataAdapter para llenar un DataTable con los resultados
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                        {
+                            DataTable dataTable = new DataTable();
+                            adapter.Fill(dataTable);
+
+                            // Mostrar los resultados en el DataGridView
+                            dataGridView_muebles.DataSource = dataTable;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar los datos: {ex.Message}");
+                throw;
+            }
+        }
+
+        private void button_fcocina_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    // Consulta SQL para obtener todos los muebles
+                    string selectQuery = "SELECT Nombre, Tipo, Establecimiento, Exposicion AS [Exposición], Seccion_almacen AS [Sección Almacen], Stock, Precio FROM Muebles WHERE Tipo = 'Cocina'";
+
+                    using (SqlCommand cmd = new SqlCommand(selectQuery, connection))
+                    {
+                        // Utilizar un SqlDataAdapter para llenar un DataTable con los resultados
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                        {
+                            DataTable dataTable = new DataTable();
+                            adapter.Fill(dataTable);
+
+                            // Mostrar los resultados en el DataGridView
+                            dataGridView_muebles.DataSource = dataTable;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar los datos: {ex.Message}");
+                throw;
+            }
+        }
+
+        private void button_fdorm_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    // Consulta SQL para obtener todos los muebles
+                    string selectQuery = "SELECT Nombre, Tipo, Establecimiento, Exposicion AS [Exposición], Seccion_almacen AS [Sección Almacen], Stock, Precio FROM Muebles WHERE Tipo = 'Dormitorio'";
+
+                    using (SqlCommand cmd = new SqlCommand(selectQuery, connection))
+                    {
+                        // Utilizar un SqlDataAdapter para llenar un DataTable con los resultados
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                        {
+                            DataTable dataTable = new DataTable();
+                            adapter.Fill(dataTable);
+
+                            // Mostrar los resultados en el DataGridView
+                            dataGridView_muebles.DataSource = dataTable;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar los datos: {ex.Message}");
+                throw;
+            }
+        }
+
+        private void button_fsde_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    // Consulta SQL para obtener todos los muebles
+                    string selectQuery = "SELECT Nombre, Tipo, Establecimiento, Exposicion AS [Exposición], Seccion_almacen AS [Sección Almacen], Stock, Precio FROM Muebles WHERE Tipo = 'Sala de estar'";
+
+                    using (SqlCommand cmd = new SqlCommand(selectQuery, connection))
+                    {
+                        // Utilizar un SqlDataAdapter para llenar un DataTable con los resultados
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                        {
+                            DataTable dataTable = new DataTable();
+                            adapter.Fill(dataTable);
+
+                            // Mostrar los resultados en el DataGridView
+                            dataGridView_muebles.DataSource = dataTable;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar los datos: {ex.Message}");
+                throw;
+            }
+        }
+
+        private void button_fsalon_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    // Consulta SQL para obtener todos los muebles
+                    string selectQuery = "SELECT Nombre, Tipo, Establecimiento, Exposicion AS [Exposición], Seccion_almacen AS [Sección Almacen], Stock, Precio " +
+                                            "FROM Muebles " +
+                                            "WHERE Tipo = 'Salón'";
+
+                    using (SqlCommand cmd = new SqlCommand(selectQuery, connection))
+                    {
+                        // Utilizar un SqlDataAdapter para llenar un DataTable con los resultados
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                        {
+                            DataTable dataTable = new DataTable();
+                            adapter.Fill(dataTable);
+
+                            // Mostrar los resultados en el DataGridView
+                            dataGridView_muebles.DataSource = dataTable;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar los datos: {ex.Message}");
+                throw;
+            }
+        }
+
+        private void button_bcn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    // Consulta SQL para obtener todos los muebles
+                    string selectQuery = "SELECT Nombre, Tipo, Establecimiento, Exposicion AS [Exposición], Seccion_almacen AS [Sección Almacen], Stock, Precio " +
+                                            "FROM Muebles " +
+                                            "WHERE Establecimiento = 'Barcelona'";
+
+                    using (SqlCommand cmd = new SqlCommand(selectQuery, connection))
+                    {
+                        // Utilizar un SqlDataAdapter para llenar un DataTable con los resultados
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                        {
+                            DataTable dataTable = new DataTable();
+                            adapter.Fill(dataTable);
+
+                            // Mostrar los resultados en el DataGridView
+                            dataGridView_muebles.DataSource = dataTable;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar los datos: {ex.Message}");
+                throw;
+            }
+        }
+
+        private void button_mad_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    // Consulta SQL para obtener todos los muebles
+                    string selectQuery = "SELECT Nombre, Tipo, Establecimiento, Exposicion AS [Exposición], Seccion_almacen AS [Sección Almacen], Stock, Precio " +
+                                            "FROM Muebles " +
+                                            "WHERE Establecimiento = 'Madrid'";
+
+                    using (SqlCommand cmd = new SqlCommand(selectQuery, connection))
+                    {
+                        // Utilizar un SqlDataAdapter para llenar un DataTable con los resultados
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                        {
+                            DataTable dataTable = new DataTable();
+                            adapter.Fill(dataTable);
+
+                            // Mostrar los resultados en el DataGridView
+                            dataGridView_muebles.DataSource = dataTable;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar los datos: {ex.Message}");
+                throw;
+            }
+        }
+
+        private void button_zgz_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    // Consulta SQL para obtener todos los muebles
+                    string selectQuery = "SELECT Nombre, Tipo, Establecimiento, Exposicion AS [Exposición], Seccion_almacen AS [Sección Almacen], Stock, Precio " +
+                                            "FROM Muebles " +
+                                            "WHERE Establecimiento = 'Zaragoza'";
+
+                    using (SqlCommand cmd = new SqlCommand(selectQuery, connection))
+                    {
+                        // Utilizar un SqlDataAdapter para llenar un DataTable con los resultados
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                        {
+                            DataTable dataTable = new DataTable();
+                            adapter.Fill(dataTable);
+
+                            // Mostrar los resultados en el DataGridView
+                            dataGridView_muebles.DataSource = dataTable;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar los datos: {ex.Message}");
+                throw;
+            }
+        }
+
+        private void pictureBox_perfil_Click(object sender, EventArgs e)
+        {
+            Form_PerfilCliente form_PerfilCliente = new Form_PerfilCliente();
+            form_PerfilCliente.Show();
+            this.Visible = false;
+        }
+
+        private void button_all_Click(object sender, EventArgs e)
+        {
+            loadData();
         }
     }
 }

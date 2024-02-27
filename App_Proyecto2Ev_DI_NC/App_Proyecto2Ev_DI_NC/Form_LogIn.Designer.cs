@@ -115,6 +115,7 @@
             // 
             textBox_password.Location = new Point(3, 260);
             textBox_password.Name = "textBox_password";
+            textBox_password.PasswordChar = '*';
             textBox_password.Size = new Size(240, 23);
             textBox_password.TabIndex = 4;
             // 
@@ -158,6 +159,7 @@
             ClientSize = new Size(315, 450);
             Controls.Add(tableLayoutPanel);
             Name = "Form_LogIn";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             tableLayoutPanel.ResumeLayout(false);
             tableLayoutPanel.PerformLayout();

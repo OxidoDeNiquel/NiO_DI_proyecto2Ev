@@ -1,6 +1,6 @@
 ﻿namespace App_Proyecto2Ev_DI_NC
 {
-    partial class Form_PerfilAdmin
+    partial class Form_PerfilCliente
     {
         /// <summary>
         /// Required designer variable.
@@ -46,14 +46,14 @@
             tableLayoutPanel1.Controls.Add(tableLayoutPanel2, 0, 2);
             tableLayoutPanel1.Controls.Add(pictureBox1, 0, 1);
             tableLayoutPanel1.Controls.Add(label_titulo, 0, 0);
-            tableLayoutPanel1.Location = new Point(12, 12);
+            tableLayoutPanel1.Location = new Point(9, 11);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 3;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 80F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
             tableLayoutPanel1.Size = new Size(230, 345);
-            tableLayoutPanel1.TabIndex = 0;
+            tableLayoutPanel1.TabIndex = 1;
             // 
             // tableLayoutPanel2
             // 
@@ -111,19 +111,19 @@
             label_titulo.Name = "label_titulo";
             label_titulo.Size = new Size(224, 34);
             label_titulo.TabIndex = 2;
-            label_titulo.Text = "Perfil Administrador";
+            label_titulo.Text = "Perfil Cliente";
             label_titulo.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // Form_PerfilAdmin
+            // Form_PerfilCliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(254, 369);
+            ClientSize = new Size(249, 367);
             Controls.Add(tableLayoutPanel1);
-            Name = "Form_PerfilAdmin";
+            Name = "Form_PerfilCliente";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form_PerfilAdmin";
+            Text = "Form_PerfilCliente";
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
             tableLayoutPanel2.ResumeLayout(false);
@@ -134,10 +134,10 @@
         #endregion
 
         private TableLayoutPanel tableLayoutPanel1;
-        private PictureBox pictureBox1;
         private TableLayoutPanel tableLayoutPanel2;
-        private Button button_volver;
         private Button button_logout;
+        private Button button_volver;
+        private PictureBox pictureBox1;
         private Label label_titulo;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace App_Proyecto2Ev_DI_NC
 {
-    partial class Form_CrearMueble
+    partial class Form_ActualizarMueble
     {
         /// <summary>
         /// Required designer variable.
@@ -35,7 +35,7 @@
             label_tipo = new Label();
             label_establecimiento = new Label();
             textBox_nombre = new TextBox();
-            button_crear = new Button();
+            button_actualizar = new Button();
             button_cancelar = new Button();
             comboBox_tipo = new ComboBox();
             comboBox_establecimiento = new ComboBox();
@@ -59,7 +59,7 @@
             tableLayoutPanel1.Controls.Add(label_title, 0, 1);
             tableLayoutPanel1.Controls.Add(tableLayoutPanel2, 0, 2);
             tableLayoutPanel1.Controls.Add(pictureBox_logo, 0, 0);
-            tableLayoutPanel1.Location = new Point(11, 4);
+            tableLayoutPanel1.Location = new Point(12, 12);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 4;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 18.4501858F));
@@ -67,7 +67,7 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 64.5756454F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 7.74907732F));
             tableLayoutPanel1.Size = new Size(551, 466);
-            tableLayoutPanel1.TabIndex = 1;
+            tableLayoutPanel1.TabIndex = 2;
             // 
             // label_title
             // 
@@ -76,11 +76,11 @@
             label_title.BackColor = Color.Transparent;
             label_title.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label_title.ForeColor = Color.SteelBlue;
-            label_title.Location = new Point(163, 85);
+            label_title.Location = new Point(139, 85);
             label_title.Name = "label_title";
-            label_title.Size = new Size(225, 42);
+            label_title.Size = new Size(272, 42);
             label_title.TabIndex = 2;
-            label_title.Text = "Crear registro mueble";
+            label_title.Text = "Actualizar registro mueble";
             label_title.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel2
@@ -92,7 +92,7 @@
             tableLayoutPanel2.Controls.Add(label_tipo, 0, 1);
             tableLayoutPanel2.Controls.Add(label_establecimiento, 0, 2);
             tableLayoutPanel2.Controls.Add(textBox_nombre, 1, 0);
-            tableLayoutPanel2.Controls.Add(button_crear, 1, 8);
+            tableLayoutPanel2.Controls.Add(button_actualizar, 1, 8);
             tableLayoutPanel2.Controls.Add(button_cancelar, 0, 8);
             tableLayoutPanel2.Controls.Add(comboBox_tipo, 1, 1);
             tableLayoutPanel2.Controls.Add(comboBox_establecimiento, 1, 2);
@@ -161,17 +161,17 @@
             textBox_nombre.Size = new Size(193, 23);
             textBox_nombre.TabIndex = 6;
             // 
-            // button_crear
+            // button_actualizar
             // 
-            button_crear.Anchor = AnchorStyles.Left;
-            button_crear.BackColor = Color.LightBlue;
-            button_crear.Location = new Point(192, 252);
-            button_crear.Name = "button_crear";
-            button_crear.Size = new Size(193, 23);
-            button_crear.TabIndex = 14;
-            button_crear.Text = "Crear mueble";
-            button_crear.UseVisualStyleBackColor = false;
-            button_crear.Click += button_crear_Click;
+            button_actualizar.Anchor = AnchorStyles.Left;
+            button_actualizar.BackColor = Color.LightBlue;
+            button_actualizar.Location = new Point(192, 252);
+            button_actualizar.Name = "button_actualizar";
+            button_actualizar.Size = new Size(193, 23);
+            button_actualizar.TabIndex = 14;
+            button_actualizar.Text = "Actualizar mueble";
+            button_actualizar.UseVisualStyleBackColor = false;
+            button_actualizar.Click += button_actualizar_Click;
             // 
             // button_cancelar
             // 
@@ -219,7 +219,6 @@
             textBox_s_almacen.Name = "textBox_s_almacen";
             textBox_s_almacen.Size = new Size(193, 23);
             textBox_s_almacen.TabIndex = 11;
-            textBox_s_almacen.TextChanged += textBox6_TextChanged;
             // 
             // label_s_almacen
             // 
@@ -278,16 +277,16 @@
             pictureBox_logo.TabIndex = 1;
             pictureBox_logo.TabStop = false;
             // 
-            // Form_CrearMueble
+            // Form_ActualizarMueble
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(573, 481);
+            ClientSize = new Size(573, 488);
             Controls.Add(tableLayoutPanel1);
-            Name = "Form_CrearMueble";
+            Name = "Form_ActualizarMueble";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form_CrearMueble";
+            Text = "Form_ActualizarMueble";
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
             tableLayoutPanel2.ResumeLayout(false);
@@ -301,22 +300,21 @@
         private TableLayoutPanel tableLayoutPanel1;
         private Label label_title;
         private TableLayoutPanel tableLayoutPanel2;
-        private PictureBox pictureBox_logo;
         private Label label_nombre;
         private Label label_tipo;
         private Label label_establecimiento;
-        private Label label_s_almacen;
         private TextBox textBox_nombre;
-        private TextBox textBox3;
-        private TextBox textBox_s_almacen;
-        private CheckBox checkBox_expo;
-        private Button button_crear;
+        private Button button_actualizar;
         private Button button_cancelar;
         private ComboBox comboBox_tipo;
         private ComboBox comboBox_establecimiento;
-        private Label label_stock;
+        private CheckBox checkBox_expo;
+        private TextBox textBox_s_almacen;
+        private Label label_s_almacen;
         private TextBox textBox_stock;
+        private Label label_stock;
         private Label label_precio;
         private TextBox textBox_precio;
+        private PictureBox pictureBox_logo;
     }
 }

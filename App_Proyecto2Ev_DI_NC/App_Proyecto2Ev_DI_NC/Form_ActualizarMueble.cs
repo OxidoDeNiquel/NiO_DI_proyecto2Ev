@@ -1,6 +1,4 @@
-﻿using LogIn;
-using Microsoft.Data.SqlClient;
-using Microsoft.VisualBasic;
+﻿using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,18 +9,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace App_Proyecto2Ev_DI_NC
 {
-    public partial class Form_CrearMueble : Form
+    public partial class Form_ActualizarMueble : Form
     {
         String connectionString = ConfigurationManager.ConnectionStrings["DatabaseConnectionString"].ConnectionString;
-        public Form_CrearMueble()
+        private int Id;
+        public Form_ActualizarMueble(int id, int stock, double precio, string name, string type, string establishment, Boolean exhibition, string storeSection)
         {
             InitializeComponent();
+            // Asignar valores a los controles del formulario
+            this.Id = id;
+            textBox_nombre.Text = name;
+            textBox_precio.Text = precio.ToString();
+            textBox_stock.Text = stock.ToString();
+            comboBox_tipo.Text = type;  // Utiliza la propiedad Text para establecer el valor seleccionado
+            comboBox_establecimiento.Text = establishment;  // Utiliza la propiedad Text para establecer el valor seleccionado
+            checkBox_expo.Checked = exhibition;
+            textBox_s_almacen.Text = storeSection;
         }
 
-        private void button_crear_Click(object sender, EventArgs e)
+        private void button_actualizar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -30,13 +39,13 @@ namespace App_Proyecto2Ev_DI_NC
                 {
                     connection.Open();
 
-                    // Consulta SQL para la inserción
-                    string insertQuery = "INSERT INTO Muebles (Nombre, Tipo, Establecimiento, Exposicion, Seccion_Almacen, Stock, Precio) " +
-                        "VALUES (@Nombre, @Tipo, @Establecimiento, @Exposicion, @Seccion_Almacen, @Stock, @Precio)";
+                    string insertQuery = "UPDATE Muebles SET Nombre = @Nombre, Tipo = @Tipo, Establecimiento = @Establecimiento, Exposicion = @Exposicion, Seccion_Almacen = @Seccion_Almacen, Stock = @Stock, Precio = @Precio " +
+                                                        "WHERE Id_Mueble = @Id";
 
                     using (SqlCommand cmd = new SqlCommand(insertQuery, connection))
                     {
                         // Utilizando Parameters.AddWithValue para evitar SQL injection
+                        cmd.Parameters.AddWithValue("@Id", Id);
                         cmd.Parameters.AddWithValue("@Nombre", textBox_nombre.Text);
                         cmd.Parameters.AddWithValue("@Tipo", comboBox_tipo.SelectedItem.ToString());
                         cmd.Parameters.AddWithValue("@Establecimiento", comboBox_establecimiento.SelectedItem.ToString());
@@ -48,7 +57,7 @@ namespace App_Proyecto2Ev_DI_NC
                         // Ejecutar la consulta
                         int rowsAffected = cmd.ExecuteNonQuery();
 
-                        MessageBox.Show($"{rowsAffected} fila(s) insertada(s).");
+                        MessageBox.Show($"{rowsAffected} fila(s) actualizada(s).");
                     }
                 }
 
@@ -63,15 +72,10 @@ namespace App_Proyecto2Ev_DI_NC
             }
         }
 
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-        }
-
         private void button_cancelar_Click(object sender, EventArgs e)
         {
-            Form_PagAdmin form_PagAdmin = new Form_PagAdmin();
-            form_PagAdmin.Show();
+            Form_PagAdmin pagAdmin = new Form_PagAdmin();
+            pagAdmin.Show();
             this.Visible = false;
         }
     }

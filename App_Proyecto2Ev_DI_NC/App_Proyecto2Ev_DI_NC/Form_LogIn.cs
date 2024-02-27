@@ -49,11 +49,11 @@ namespace App_Proyecto2Ev_DI_NC
                                         reader["Apellido2"].ToString(),
                                         Convert.ToInt32(reader["CodPostal"]),
                                         reader["Usuario"].ToString(),
-                                        AesCrypt.Decrypt( reader["Contraseña"].ToString()),
+                                        AesCrypt.Decrypt(reader["Contraseña"].ToString()),
                                         reader["Tipo"].ToString()
                                     );
 
-                                    if(result.Password.Equals(textBox_password.Text))
+                                    if (result.Password.Equals(textBox_password.Text))
                                     {
                                         if (result.Tipo.Equals("admin"))
                                         {

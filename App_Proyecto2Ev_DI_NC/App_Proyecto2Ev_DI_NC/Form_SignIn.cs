@@ -45,13 +45,25 @@ namespace App_Proyecto2Ev_DI_NC
                 cmd.ExecuteNonQuery();
 
                 connection.Close();
-                MessageBox.Show("Éxito");
+                MessageBox.Show("La cuenta ha sido creada con éxito");
+
+                Form_LogIn form_LogIn = new Form_LogIn();
+                form_LogIn.Show();
+                this.Visible = false;
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
                 throw;
             }
+        }
+
+        private void button_cancelar_Click(object sender, EventArgs e)
+        {
+            Form_LogIn form_LogIn = new Form_LogIn();
+            form_LogIn.Show();
+            this.Visible = false;
         }
     }
 }

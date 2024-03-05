@@ -28,7 +28,7 @@ Este repositorio contiene una aplicación desarrollada en C# con Windows Forms, 
 
 1. Clona o descarga el repositorio en tu máquina local.
    ```bash
-   git clone https://github.com/tuusuario/nombre-del-repo.git
+   git clone https://github.com/OxidoDeNiquel/NiO_DI_proyecto2Ev.git
 2. Abre la solución en Visual Studio.
 3. Compila y ejecuta la aplicación.
 4. Selecciona el perfil de usuario (administrador o cliente) al iniciar sesión.

@@ -272,7 +272,7 @@
             Controls.Add(tableLayoutPanel1);
             Name = "Form_SignIn";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form_SignIn";
+            Text = "Nuevo cliente";
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
             tableLayoutPanel2.ResumeLayout(false);

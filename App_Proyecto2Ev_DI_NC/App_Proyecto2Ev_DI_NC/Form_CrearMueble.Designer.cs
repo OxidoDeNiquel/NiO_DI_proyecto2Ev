@@ -287,7 +287,7 @@
             Controls.Add(tableLayoutPanel1);
             Name = "Form_CrearMueble";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form_CrearMueble";
+            Text = "Crear mueble";
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
             tableLayoutPanel2.ResumeLayout(false);

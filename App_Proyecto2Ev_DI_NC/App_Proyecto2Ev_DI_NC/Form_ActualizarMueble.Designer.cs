@@ -286,7 +286,7 @@
             Controls.Add(tableLayoutPanel1);
             Name = "Form_ActualizarMueble";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form_ActualizarMueble";
+            Text = "Actualizar mueble";
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
             tableLayoutPanel2.ResumeLayout(false);

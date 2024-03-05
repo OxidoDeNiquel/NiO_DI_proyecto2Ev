@@ -5,7 +5,9 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App_Proyecto2Ev_DI_NC", "App_Proyecto2Ev_DI_NC\App_Proyecto2Ev_DI_NC.csproj", "{3A4B0CD6-D01B-43B3-905A-8182BFD6F896}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriaMuebles", "LibreriaMuebles\LibreriaMuebles.csproj", "{0D2A4600-79ED-49E8-80E2-2C307356922A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibreriaMuebles", "LibreriaMuebles\LibreriaMuebles.csproj", "{0D2A4600-79ED-49E8-80E2-2C307356922A}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SmartDecor Setup", "SmartDecor Setup\SmartDecor Setup.vdproj", "{FDD7E020-0242-496B-85EB-CB2B425DC214}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,8 @@ Global
 		{0D2A4600-79ED-49E8-80E2-2C307356922A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D2A4600-79ED-49E8-80E2-2C307356922A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D2A4600-79ED-49E8-80E2-2C307356922A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDD7E020-0242-496B-85EB-CB2B425DC214}.Debug|Any CPU.ActiveCfg = Debug
+		{FDD7E020-0242-496B-85EB-CB2B425DC214}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

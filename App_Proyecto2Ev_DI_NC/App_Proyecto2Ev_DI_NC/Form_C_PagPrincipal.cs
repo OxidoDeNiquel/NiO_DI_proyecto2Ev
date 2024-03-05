@@ -329,5 +329,15 @@ namespace App_Proyecto2Ev_DI_NC
         {
             loadData();
         }
+
+        private void pictureBox_ayuda_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("- Los botones superiores filtrarán por tipo de mueble.\n\n" +
+                "- Los botones situados en la columna izquierda filtrarán por ciudad donde se encuentren los muebles.\n\n" +
+                "Si deseas cerrar sesión, presione en el icono de perfil situado arriba a la derecha y seleccione 'Cerrar sesión'.",
+                "Ayuda Cliente",
+                MessageBoxButtons.OKCancel,
+                MessageBoxIcon.Information);
+        }
     }
 }

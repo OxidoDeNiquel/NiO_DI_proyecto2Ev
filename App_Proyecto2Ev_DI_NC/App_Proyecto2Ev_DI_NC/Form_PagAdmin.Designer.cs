@@ -231,7 +231,7 @@
             Controls.Add(tableLayoutPanel1);
             Name = "Form_PagAdmin";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form_PagAdmin";
+            Text = "Administrador";
             tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox_logo).EndInit();
             tableLayoutPanel2.ResumeLayout(false);

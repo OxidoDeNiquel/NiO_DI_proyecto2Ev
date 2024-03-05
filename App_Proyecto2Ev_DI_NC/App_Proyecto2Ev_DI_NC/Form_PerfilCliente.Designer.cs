@@ -123,7 +123,7 @@
             Controls.Add(tableLayoutPanel1);
             Name = "Form_PerfilCliente";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form_PerfilCliente";
+            Text = "SmartDecor";
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
             tableLayoutPanel2.ResumeLayout(false);

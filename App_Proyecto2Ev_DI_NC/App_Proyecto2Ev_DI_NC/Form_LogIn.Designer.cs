@@ -160,7 +160,7 @@
             Controls.Add(tableLayoutPanel);
             Name = "Form_LogIn";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Iniciar sesión";
             tableLayoutPanel.ResumeLayout(false);
             tableLayoutPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

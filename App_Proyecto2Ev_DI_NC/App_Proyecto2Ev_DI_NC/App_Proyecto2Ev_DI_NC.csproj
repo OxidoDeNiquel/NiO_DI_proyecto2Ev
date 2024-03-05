@@ -20,7 +20,7 @@
 
   <ItemGroup>
     <Reference Include="LibreriaMuebles">
-      <HintPath>..\LibreriaMuebles\bin\Debug\net8.0\LibreriaMuebles.dll</HintPath>
+      <HintPath>..\LibreriaMuebles\bin\Debug\net6.0-windows\LibreriaMuebles.dll</HintPath>
     </Reference>
   </ItemGroup>
 

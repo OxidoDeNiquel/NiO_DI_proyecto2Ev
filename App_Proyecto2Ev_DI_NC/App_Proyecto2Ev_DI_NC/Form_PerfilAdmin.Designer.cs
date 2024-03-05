@@ -123,7 +123,7 @@
             Controls.Add(tableLayoutPanel1);
             Name = "Form_PerfilAdmin";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form_PerfilAdmin";
+            Text = "Administrador";
             tableLayoutPanel1.ResumeLayout(false);
             tableLayoutPanel1.PerformLayout();
             tableLayoutPanel2.ResumeLayout(false);

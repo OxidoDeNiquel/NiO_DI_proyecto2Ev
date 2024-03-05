@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LibreriaMuebles")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15d50b48708224711dfa5f5b6c053414b4fd3d81")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21fa0e892a656e765225ff56c2e5012f420264b8")]
 [assembly: System.Reflection.AssemblyProductAttribute("LibreriaMuebles")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LibreriaMuebles")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -32,25 +32,27 @@
             tableLayoutPanel1 = new TableLayoutPanel();
             pictureBox_logo = new PictureBox();
             tableLayoutPanel2 = new TableLayoutPanel();
-            pictureBox_perfil = new PictureBox();
             tableLayoutPanel3 = new TableLayoutPanel();
-            button_fcocina = new Button();
-            button_fsde = new Button();
+            button_all = new Button();
             button_fsalon = new Button();
-            button_fbano = new Button();
+            button_fsde = new Button();
             button_fdorm = new Button();
+            button_fcocina = new Button();
+            button_fbano = new Button();
+            pictureBox_perfil = new PictureBox();
+            pictureBox_ayuda = new PictureBox();
             tableLayoutPanel4 = new TableLayoutPanel();
             dataGridView_muebles = new DataGridView();
             tableLayoutPanel6 = new TableLayoutPanel();
             button_zgz = new Button();
             button_mad = new Button();
             button_bcn = new Button();
-            button_all = new Button();
             tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox_logo).BeginInit();
             tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox_perfil).BeginInit();
             tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_perfil).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_ayuda).BeginInit();
             tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView_muebles).BeginInit();
             tableLayoutPanel6.SuspendLayout();
@@ -87,12 +89,13 @@
             // 
             // tableLayoutPanel2
             // 
-            tableLayoutPanel2.ColumnCount = 2;
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 92.47312F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.52688169F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel2.Controls.Add(pictureBox_perfil, 1, 0);
+            tableLayoutPanel2.ColumnCount = 3;
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 85.62326F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 6.96933556F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 7.40740728F));
             tableLayoutPanel2.Controls.Add(tableLayoutPanel3, 0, 1);
+            tableLayoutPanel2.Controls.Add(pictureBox_perfil, 2, 0);
+            tableLayoutPanel2.Controls.Add(pictureBox_ayuda, 1, 0);
             tableLayoutPanel2.Location = new Point(156, 3);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 2;
@@ -100,18 +103,6 @@
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel2.Size = new Size(761, 82);
             tableLayoutPanel2.TabIndex = 2;
-            // 
-            // pictureBox_perfil
-            // 
-            pictureBox_perfil.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox_perfil.Image = Properties.Resources.perfil_icono;
-            pictureBox_perfil.Location = new Point(706, 3);
-            pictureBox_perfil.Name = "pictureBox_perfil";
-            pictureBox_perfil.Size = new Size(52, 35);
-            pictureBox_perfil.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox_perfil.TabIndex = 0;
-            pictureBox_perfil.TabStop = false;
-            pictureBox_perfil.Click += pictureBox_perfil_Click;
             // 
             // tableLayoutPanel3
             // 
@@ -133,68 +124,104 @@
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 1;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel3.Size = new Size(697, 35);
+            tableLayoutPanel3.Size = new Size(645, 35);
             tableLayoutPanel3.TabIndex = 2;
             // 
-            // button_fcocina
+            // button_all
             // 
-            button_fcocina.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button_fcocina.BackColor = Color.LightBlue;
-            button_fcocina.Location = new Point(235, 3);
-            button_fcocina.Name = "button_fcocina";
-            button_fcocina.Size = new Size(110, 29);
-            button_fcocina.TabIndex = 1;
-            button_fcocina.Text = "Cocina";
-            button_fcocina.UseVisualStyleBackColor = false;
-            button_fcocina.Click += button_fcocina_Click;
-            // 
-            // button_fsde
-            // 
-            button_fsde.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button_fsde.BackColor = Color.LightBlue;
-            button_fsde.Location = new Point(467, 3);
-            button_fsde.Name = "button_fsde";
-            button_fsde.Size = new Size(110, 29);
-            button_fsde.TabIndex = 3;
-            button_fsde.Text = "Sala de estar";
-            button_fsde.UseVisualStyleBackColor = false;
-            button_fsde.Click += button_fsde_Click;
+            button_all.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button_all.BackColor = Color.LightBlue;
+            button_all.Location = new Point(3, 3);
+            button_all.Name = "button_all";
+            button_all.Size = new Size(101, 29);
+            button_all.TabIndex = 5;
+            button_all.Text = "Todo el catálogo";
+            button_all.UseVisualStyleBackColor = false;
+            button_all.Click += button_all_Click;
             // 
             // button_fsalon
             // 
             button_fsalon.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             button_fsalon.BackColor = Color.LightBlue;
-            button_fsalon.Location = new Point(583, 3);
+            button_fsalon.Location = new Point(538, 3);
             button_fsalon.Name = "button_fsalon";
-            button_fsalon.Size = new Size(111, 29);
+            button_fsalon.Size = new Size(104, 29);
             button_fsalon.TabIndex = 0;
             button_fsalon.Text = "Salón";
             button_fsalon.UseVisualStyleBackColor = false;
             button_fsalon.Click += button_fsalon_Click;
             // 
-            // button_fbano
+            // button_fsde
             // 
-            button_fbano.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button_fbano.BackColor = Color.LightBlue;
-            button_fbano.Location = new Point(119, 3);
-            button_fbano.Name = "button_fbano";
-            button_fbano.Size = new Size(110, 29);
-            button_fbano.TabIndex = 2;
-            button_fbano.Text = "Baño";
-            button_fbano.UseVisualStyleBackColor = false;
-            button_fbano.Click += button_fbano_Click;
+            button_fsde.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button_fsde.BackColor = Color.LightBlue;
+            button_fsde.Location = new Point(431, 3);
+            button_fsde.Name = "button_fsde";
+            button_fsde.Size = new Size(101, 29);
+            button_fsde.TabIndex = 3;
+            button_fsde.Text = "Sala de estar";
+            button_fsde.UseVisualStyleBackColor = false;
+            button_fsde.Click += button_fsde_Click;
             // 
             // button_fdorm
             // 
             button_fdorm.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             button_fdorm.BackColor = Color.LightBlue;
-            button_fdorm.Location = new Point(351, 3);
+            button_fdorm.Location = new Point(324, 3);
             button_fdorm.Name = "button_fdorm";
-            button_fdorm.Size = new Size(110, 29);
+            button_fdorm.Size = new Size(101, 29);
             button_fdorm.TabIndex = 4;
             button_fdorm.Text = "Dormitorio";
             button_fdorm.UseVisualStyleBackColor = false;
             button_fdorm.Click += button_fdorm_Click;
+            // 
+            // button_fcocina
+            // 
+            button_fcocina.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button_fcocina.BackColor = Color.LightBlue;
+            button_fcocina.Location = new Point(217, 3);
+            button_fcocina.Name = "button_fcocina";
+            button_fcocina.Size = new Size(101, 29);
+            button_fcocina.TabIndex = 1;
+            button_fcocina.Text = "Cocina";
+            button_fcocina.UseVisualStyleBackColor = false;
+            button_fcocina.Click += button_fcocina_Click;
+            // 
+            // button_fbano
+            // 
+            button_fbano.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            button_fbano.BackColor = Color.LightBlue;
+            button_fbano.Location = new Point(110, 3);
+            button_fbano.Name = "button_fbano";
+            button_fbano.Size = new Size(101, 29);
+            button_fbano.TabIndex = 2;
+            button_fbano.Text = "Baño";
+            button_fbano.UseVisualStyleBackColor = false;
+            button_fbano.Click += button_fbano_Click;
+            // 
+            // pictureBox_perfil
+            // 
+            pictureBox_perfil.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox_perfil.Image = Properties.Resources.perfil_icono;
+            pictureBox_perfil.Location = new Point(707, 3);
+            pictureBox_perfil.Name = "pictureBox_perfil";
+            pictureBox_perfil.Size = new Size(51, 35);
+            pictureBox_perfil.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox_perfil.TabIndex = 0;
+            pictureBox_perfil.TabStop = false;
+            pictureBox_perfil.Click += pictureBox_perfil_Click;
+            // 
+            // pictureBox_ayuda
+            // 
+            pictureBox_ayuda.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox_ayuda.Image = (Image)resources.GetObject("pictureBox_ayuda.Image");
+            pictureBox_ayuda.Location = new Point(654, 3);
+            pictureBox_ayuda.Name = "pictureBox_ayuda";
+            pictureBox_ayuda.Size = new Size(47, 35);
+            pictureBox_ayuda.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox_ayuda.TabIndex = 3;
+            pictureBox_ayuda.TabStop = false;
+            pictureBox_ayuda.Click += pictureBox_ayuda_Click;
             // 
             // tableLayoutPanel4
             // 
@@ -273,18 +300,6 @@
             button_bcn.UseVisualStyleBackColor = true;
             button_bcn.Click += button_bcn_Click;
             // 
-            // button_all
-            // 
-            button_all.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            button_all.BackColor = Color.LightBlue;
-            button_all.Location = new Point(3, 3);
-            button_all.Name = "button_all";
-            button_all.Size = new Size(110, 29);
-            button_all.TabIndex = 5;
-            button_all.Text = "Todo el catálogo";
-            button_all.UseVisualStyleBackColor = false;
-            button_all.Click += button_all_Click;
-            // 
             // Form_C_PagPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -294,12 +309,13 @@
             Controls.Add(tableLayoutPanel1);
             Name = "Form_C_PagPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form_C_PagPrincipal";
+            Text = "SmartDecor";
             tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox_logo).EndInit();
             tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox_perfil).EndInit();
             tableLayoutPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox_perfil).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_ayuda).EndInit();
             tableLayoutPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView_muebles).EndInit();
             tableLayoutPanel6.ResumeLayout(false);
@@ -325,5 +341,6 @@
         private Button button_bcn;
         private PictureBox pictureBox_perfil;
         private Button button_all;
+        private PictureBox pictureBox_ayuda;
     }
 }

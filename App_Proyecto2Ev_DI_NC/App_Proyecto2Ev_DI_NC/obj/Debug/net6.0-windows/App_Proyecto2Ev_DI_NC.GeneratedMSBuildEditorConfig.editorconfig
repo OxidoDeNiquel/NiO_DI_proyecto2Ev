@@ -14,4 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = App_Proyecto2Ev_DI_NC
-build_property.ProjectDir = C:\Users\Alumno\Documents\GitHub\NiO_DI_proyecto2Ev\App_Proyecto2Ev_DI_NC\App_Proyecto2Ev_DI_NC\
+build_property.ProjectDir = C:\Users\Niio\Documents\GitHub\NiO_DI_proyecto2Ev\App_Proyecto2Ev_DI_NC\App_Proyecto2Ev_DI_NC\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

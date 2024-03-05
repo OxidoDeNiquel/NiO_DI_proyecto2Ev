@@ -1,4 +1,5 @@
-using App_Proyecto2Ev_DI_NC.Clases;
+
+using LibreriaMuebles;
 using LogIn;
 using Microsoft.Data.SqlClient;
 using System.Configuration;

@@ -1,0 +1,24 @@
+//Sentencia de prueba para insertar datos en la bbdd
+INSERT INTO Muebles (Nombre, Tipo, Establecimiento, Exposicion, Seccion_Almacen, Stock, Precio)
+VALUES
+('Mesa de Centro', 'Salón', 'Madrid', 1, 'SA-001', 10, 150.00),
+('Sofá Reclinable', 'Sala de estar', 'Barcelona', 0, 'SA-002', 5, 500.00),
+('Armario Empotrado', 'Dormitorio', 'Zaragoza', 1, 'SA-003', 8, 800.00),
+('Mueble de TV', 'Salón', 'Madrid', 1, 'SA-004', 12, 200.00),
+('Cocina Modular', 'Cocina', 'Barcelona', 0, 'SA-005', 6, 1200.00),
+('Espejo Decorativo', 'Baño', 'Zaragoza', 1, 'SA-006', 15, 80.00),
+('Silla de Comedor', 'Salón', 'Madrid', 1, 'SA-007', 20, 50.00),
+('Cama King Size', 'Dormitorio', 'Barcelona', 0, 'SA-008', 7, 700.00),
+('Lámpara de Pie', 'Sala de estar', 'Zaragoza', 1, 'SA-009', 18, 120.00),
+('Mueble Lavabo', 'Baño', 'Madrid', 1, 'SA-010', 9, 350.00),
+('Sofá Cama', 'Sala de estar', 'Barcelona', 0, 'SA-011', 4, 600.00),
+('Mesa de Cocina', 'Cocina', 'Zaragoza', 1, 'SA-012', 14, 180.00),
+('Cómoda Vintage', 'Dormitorio', 'Madrid', 1, 'SA-013', 11, 250.00),
+('Toallero de Pared', 'Baño', 'Barcelona', 0, 'SA-014', 17, 30.00),
+('Estantería Modular', 'Salón', 'Zaragoza', 1, 'SA-015', 13, 300.00),
+('Mesa de Noche', 'Dormitorio', 'Madrid', 1, 'SA-016', 16, 80.00),
+('Silla Plegable', 'Cocina', 'Barcelona', 0, 'SA-017', 22, 40.00),
+('Armario Baño', 'Baño', 'Zaragoza', 1, 'SA-018', 8, 180.00),
+('Cómoda Moderna', 'Dormitorio', 'Madrid', 1, 'SA-019', 10, 320.00),
+('Mesa Extensible', 'Salón', 'Barcelona', 0, 'SA-020', 9, 250.00),
+('Sofá de Cuero', 'Sala de estar', 'Zaragoza', 1, 'SA-021', 6, 800.00);

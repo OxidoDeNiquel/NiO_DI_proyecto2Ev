@@ -1,0 +1,12 @@
+C:\Users\Niio\Documents\GitHub\NiO_DI_proyecto2Ev\App_Proyecto2Ev_DI_NC\LibreriaMuebles\bin\Debug\net8.0\LibreriaMuebles.deps.json
+C:\Users\Niio\Documents\GitHub\NiO_DI_proyecto2Ev\App_Proyecto2Ev_DI_NC\LibreriaMuebles\bin\Debug\net8.0\LibreriaMuebles.dll
+C:\Users\Niio\Documents\GitHub\NiO_DI_proyecto2Ev\App_Proyecto2Ev_DI_NC\LibreriaMuebles\bin\Debug\net8.0\LibreriaMuebles.pdb
+C:\Users\Niio\Documents\GitHub\NiO_DI_proyecto2Ev\App_Proyecto2Ev_DI_NC\LibreriaMuebles\obj\Debug\net8.0\LibreriaMuebles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Niio\Documents\GitHub\NiO_DI_proyecto2Ev\App_Proyecto2Ev_DI_NC\LibreriaMuebles\obj\Debug\net8.0\LibreriaMuebles.AssemblyInfoInputs.cache
+C:\Users\Niio\Documents\GitHub\NiO_DI_proyecto2Ev\App_Proyecto2Ev_DI_NC\LibreriaMuebles\obj\Debug\net8.0\LibreriaMuebles.AssemblyInfo.cs
+C:\Users\Niio\Documents\GitHub\NiO_DI_proyecto2Ev\App_Proyecto2Ev_DI_NC\LibreriaMuebles\obj\Debug\net8.0\LibreriaMuebles.csproj.CoreCompileInputs.cache
+C:\Users\Niio\Documents\GitHub\NiO_DI_proyecto2Ev\App_Proyecto2Ev_DI_NC\LibreriaMuebles\obj\Debug\net8.0\LibreriaMuebles.sourcelink.json
+C:\Users\Niio\Documents\GitHub\NiO_DI_proyecto2Ev\App_Proyecto2Ev_DI_NC\LibreriaMuebles\obj\Debug\net8.0\LibreriaMuebles.dll
+C:\Users\Niio\Documents\GitHub\NiO_DI_proyecto2Ev\App_Proyecto2Ev_DI_NC\LibreriaMuebles\obj\Debug\net8.0\refint\LibreriaMuebles.dll
+C:\Users\Niio\Documents\GitHub\NiO_DI_proyecto2Ev\App_Proyecto2Ev_DI_NC\LibreriaMuebles\obj\Debug\net8.0\LibreriaMuebles.pdb
+C:\Users\Niio\Documents\GitHub\NiO_DI_proyecto2Ev\App_Proyecto2Ev_DI_NC\LibreriaMuebles\obj\Debug\net8.0\ref\LibreriaMuebles.dll

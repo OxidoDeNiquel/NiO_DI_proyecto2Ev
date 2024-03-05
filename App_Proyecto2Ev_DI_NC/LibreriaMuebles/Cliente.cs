@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace App_Proyecto2Ev_DI_NC.Clases
+namespace LibreriaMuebles
 {
     public class Cliente
     {

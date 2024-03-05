@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_LogIn));
             tableLayoutPanel = new TableLayoutPanel();
             label_login = new Label();
             label1 = new Label();
@@ -37,6 +39,7 @@
             pictureBox1 = new PictureBox();
             button_login = new Button();
             button1 = new Button();
+            toolTip_ayuda = new ToolTip(components);
             tableLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -110,6 +113,7 @@
             textBox_username.Name = "textBox_username";
             textBox_username.Size = new Size(240, 23);
             textBox_username.TabIndex = 3;
+            toolTip_ayuda.SetToolTip(textBox_username, "Ingresa tu nombre de usuario previamente registrado. Este campo \r\nes sensible a mayúsculas y minúsculas");
             // 
             // textBox_password
             // 
@@ -118,6 +122,7 @@
             textBox_password.PasswordChar = '*';
             textBox_password.Size = new Size(240, 23);
             textBox_password.TabIndex = 4;
+            toolTip_ayuda.SetToolTip(textBox_password, "Proporciona tu contraseña asociada al nombre de usuario. Recuerda que la \r\ncontraseña es sensible a mayúsculas y minúsculas.");
             // 
             // pictureBox1
             // 
@@ -138,6 +143,7 @@
             button_login.Size = new Size(240, 24);
             button_login.TabIndex = 6;
             button_login.Text = "Iniciar sesión";
+            toolTip_ayuda.SetToolTip(button_login, "Haz clic en este botón para acceder a tu cuenta. Asegúrate de ingresar \r\ncorrectamente tu nombre de usuario y contraseña.");
             button_login.UseVisualStyleBackColor = false;
             button_login.Click += button_login_Click;
             // 
@@ -148,8 +154,15 @@
             button1.Size = new Size(240, 23);
             button1.TabIndex = 7;
             button1.Text = "Soy un nuevo cliente";
+            toolTip_ayuda.SetToolTip(button1, resources.GetString("button1.ToolTip"));
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
+            // 
+            // toolTip_ayuda
+            // 
+            toolTip_ayuda.IsBalloon = true;
+            toolTip_ayuda.ShowAlways = true;
+            toolTip_ayuda.ToolTipIcon = ToolTipIcon.Info;
             // 
             // Form_LogIn
             // 
@@ -178,5 +191,6 @@
         private PictureBox pictureBox1;
         private Button button_login;
         private Button button1;
+        private ToolTip toolTip_ayuda;
     }
 }

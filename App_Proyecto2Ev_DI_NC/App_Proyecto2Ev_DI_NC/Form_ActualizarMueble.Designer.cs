@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             tableLayoutPanel1 = new TableLayoutPanel();
             label_title = new Label();
             tableLayoutPanel2 = new TableLayoutPanel();
@@ -47,6 +48,7 @@
             label_precio = new Label();
             textBox_precio = new TextBox();
             pictureBox_logo = new PictureBox();
+            toolTip_ayuda = new ToolTip(components);
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox_logo).BeginInit();
@@ -160,6 +162,7 @@
             textBox_nombre.Name = "textBox_nombre";
             textBox_nombre.Size = new Size(193, 23);
             textBox_nombre.TabIndex = 6;
+            toolTip_ayuda.SetToolTip(textBox_nombre, "Ingresa el nombre del mueble que estás creando. Este campo acepta solo letras y números, \r\nsin caracteres especiales.");
             // 
             // button_actualizar
             // 
@@ -170,6 +173,7 @@
             button_actualizar.Size = new Size(193, 23);
             button_actualizar.TabIndex = 14;
             button_actualizar.Text = "Actualizar mueble";
+            toolTip_ayuda.SetToolTip(button_actualizar, "Haz clic en este botón para agregar el nuevo mueble a tu inventario. \r\nAsegúrate de haber completado todos los campos correctamente antes de confirmar la actualización.");
             button_actualizar.UseVisualStyleBackColor = false;
             button_actualizar.Click += button_actualizar_Click;
             // 
@@ -192,6 +196,7 @@
             comboBox_tipo.Name = "comboBox_tipo";
             comboBox_tipo.Size = new Size(193, 23);
             comboBox_tipo.TabIndex = 16;
+            toolTip_ayuda.SetToolTip(comboBox_tipo, "Selecciona el tipo de mueble que estás creando.");
             // 
             // comboBox_establecimiento
             // 
@@ -201,6 +206,7 @@
             comboBox_establecimiento.Name = "comboBox_establecimiento";
             comboBox_establecimiento.Size = new Size(193, 23);
             comboBox_establecimiento.TabIndex = 17;
+            toolTip_ayuda.SetToolTip(comboBox_establecimiento, "Indica el establecimiento al que pertenece este mueble. ");
             // 
             // checkBox_expo
             // 
@@ -211,6 +217,7 @@
             checkBox_expo.Size = new Size(83, 19);
             checkBox_expo.TabIndex = 12;
             checkBox_expo.Text = "Exposición";
+            toolTip_ayuda.SetToolTip(checkBox_expo, "Marca esta casilla si el mueble estará en exposición. ");
             checkBox_expo.UseVisualStyleBackColor = true;
             // 
             // textBox_s_almacen
@@ -219,6 +226,7 @@
             textBox_s_almacen.Name = "textBox_s_almacen";
             textBox_s_almacen.Size = new Size(193, 23);
             textBox_s_almacen.TabIndex = 11;
+            toolTip_ayuda.SetToolTip(textBox_s_almacen, "Especifica la sección o categoría a la que pertenece este mueble. \r\nFacilita la búsqueda y organización interna de tu inventario.");
             // 
             // label_s_almacen
             // 
@@ -238,6 +246,7 @@
             textBox_stock.Name = "textBox_stock";
             textBox_stock.Size = new Size(193, 23);
             textBox_stock.TabIndex = 19;
+            toolTip_ayuda.SetToolTip(textBox_stock, "Ingresa la cantidad disponible en stock de este mueble. Asegúrate de mantener \r\nactualizado este número para gestionar eficientemente tu inventario.");
             // 
             // label_stock
             // 
@@ -265,6 +274,7 @@
             textBox_precio.Name = "textBox_precio";
             textBox_precio.Size = new Size(193, 23);
             textBox_precio.TabIndex = 21;
+            toolTip_ayuda.SetToolTip(textBox_precio, "Establece el precio de venta de este mueble.");
             // 
             // pictureBox_logo
             // 
@@ -276,6 +286,12 @@
             pictureBox_logo.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox_logo.TabIndex = 1;
             pictureBox_logo.TabStop = false;
+            // 
+            // toolTip_ayuda
+            // 
+            toolTip_ayuda.IsBalloon = true;
+            toolTip_ayuda.ShowAlways = true;
+            toolTip_ayuda.ToolTipIcon = ToolTipIcon.Info;
             // 
             // Form_ActualizarMueble
             // 
@@ -316,5 +332,6 @@
         private Label label_precio;
         private TextBox textBox_precio;
         private PictureBox pictureBox_logo;
+        private ToolTip toolTip_ayuda;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             tableLayoutPanel1 = new TableLayoutPanel();
             label_signin = new Label();
             tableLayoutPanel2 = new TableLayoutPanel();
@@ -46,6 +47,7 @@
             button_cancelar = new Button();
             button_crear = new Button();
             pictureBox_logo = new PictureBox();
+            toolTip_ayuda = new ToolTip(components);
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox_logo).BeginInit();
@@ -84,9 +86,10 @@
             // 
             // tableLayoutPanel2
             // 
-            tableLayoutPanel2.ColumnCount = 2;
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 34.6789F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 65.3211F));
+            tableLayoutPanel2.ColumnCount = 3;
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 47.9166679F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 52.0833321F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 152F));
             tableLayoutPanel2.Controls.Add(textBox_username, 1, 0);
             tableLayoutPanel2.Controls.Add(label_password, 0, 1);
             tableLayoutPanel2.Controls.Add(textBox_password, 1, 1);
@@ -119,17 +122,18 @@
             // textBox_username
             // 
             textBox_username.Anchor = AnchorStyles.Left;
-            textBox_username.Location = new Point(192, 4);
+            textBox_username.Location = new Point(191, 4);
             textBox_username.Name = "textBox_username";
             textBox_username.Size = new Size(196, 23);
             textBox_username.TabIndex = 3;
+            toolTip_ayuda.SetToolTip(textBox_username, "Ingresa un nombre de usuario único que utilizarás para iniciar sesión. \r\nPuede contener letras, números y caracteres especiales.");
             // 
             // label_password
             // 
             label_password.Anchor = AnchorStyles.Right;
             label_password.AutoSize = true;
             label_password.BackColor = Color.Transparent;
-            label_password.Location = new Point(114, 39);
+            label_password.Location = new Point(113, 39);
             label_password.Name = "label_password";
             label_password.Size = new Size(72, 15);
             label_password.TabIndex = 8;
@@ -138,18 +142,19 @@
             // textBox_password
             // 
             textBox_password.Anchor = AnchorStyles.Left;
-            textBox_password.Location = new Point(192, 35);
+            textBox_password.Location = new Point(191, 35);
             textBox_password.Name = "textBox_password";
             textBox_password.PasswordChar = '*';
             textBox_password.Size = new Size(196, 23);
             textBox_password.TabIndex = 9;
+            toolTip_ayuda.SetToolTip(textBox_password, "Crea una contraseña segura con al menos 8 caracteres, incluyendo letras mayúsculas, \r\nminúsculas, números y caracteres especiales.");
             // 
             // label_username
             // 
             label_username.Anchor = AnchorStyles.Right;
             label_username.AutoSize = true;
             label_username.BackColor = Color.Transparent;
-            label_username.Location = new Point(72, 8);
+            label_username.Location = new Point(71, 8);
             label_username.Name = "label_username";
             label_username.Size = new Size(114, 15);
             label_username.TabIndex = 2;
@@ -160,7 +165,7 @@
             label_codpostal.Anchor = AnchorStyles.Right;
             label_codpostal.AutoSize = true;
             label_codpostal.BackColor = Color.Transparent;
-            label_codpostal.Location = new Point(100, 194);
+            label_codpostal.Location = new Point(99, 194);
             label_codpostal.Name = "label_codpostal";
             label_codpostal.Size = new Size(86, 15);
             label_codpostal.TabIndex = 10;
@@ -169,17 +174,18 @@
             // textBox_codpostal
             // 
             textBox_codpostal.Anchor = AnchorStyles.Left;
-            textBox_codpostal.Location = new Point(192, 190);
+            textBox_codpostal.Location = new Point(191, 190);
             textBox_codpostal.Name = "textBox_codpostal";
             textBox_codpostal.Size = new Size(196, 23);
             textBox_codpostal.TabIndex = 11;
+            toolTip_ayuda.SetToolTip(textBox_codpostal, "Ingresa el código postal de tu dirección. Este campo acepta solo números y \r\ndebe tener el formato correspondiente al país.");
             // 
             // label_apellido2
             // 
             label_apellido2.Anchor = AnchorStyles.Right;
             label_apellido2.AutoSize = true;
             label_apellido2.BackColor = Color.Transparent;
-            label_apellido2.Location = new Point(112, 163);
+            label_apellido2.Location = new Point(111, 163);
             label_apellido2.Name = "label_apellido2";
             label_apellido2.Size = new Size(74, 15);
             label_apellido2.TabIndex = 6;
@@ -188,17 +194,18 @@
             // textBox_apellido2
             // 
             textBox_apellido2.Anchor = AnchorStyles.Left;
-            textBox_apellido2.Location = new Point(192, 159);
+            textBox_apellido2.Location = new Point(191, 159);
             textBox_apellido2.Name = "textBox_apellido2";
             textBox_apellido2.Size = new Size(196, 23);
             textBox_apellido2.TabIndex = 7;
+            toolTip_ayuda.SetToolTip(textBox_apellido2, "En caso de tener un segundo apellido, introdúcelo aquí. Si no, déjalo en blanco. \r\nUtiliza solo letras, sin caracteres especiales o números.");
             // 
             // label_apellido1
             // 
             label_apellido1.Anchor = AnchorStyles.Right;
             label_apellido1.AutoSize = true;
             label_apellido1.BackColor = Color.Transparent;
-            label_apellido1.Location = new Point(130, 132);
+            label_apellido1.Location = new Point(129, 132);
             label_apellido1.Name = "label_apellido1";
             label_apellido1.Size = new Size(56, 15);
             label_apellido1.TabIndex = 4;
@@ -207,16 +214,17 @@
             // textBox_apellido1
             // 
             textBox_apellido1.Anchor = AnchorStyles.Left;
-            textBox_apellido1.Location = new Point(192, 128);
+            textBox_apellido1.Location = new Point(191, 128);
             textBox_apellido1.Name = "textBox_apellido1";
             textBox_apellido1.Size = new Size(196, 23);
             textBox_apellido1.TabIndex = 5;
+            toolTip_ayuda.SetToolTip(textBox_apellido1, "Ingresa tu primer apellido. Utiliza solo letras, sin caracteres especiales o números.");
             // 
             // label_nombre
             // 
             label_nombre.Anchor = AnchorStyles.Right;
             label_nombre.AutoSize = true;
-            label_nombre.Location = new Point(130, 101);
+            label_nombre.Location = new Point(129, 101);
             label_nombre.Name = "label_nombre";
             label_nombre.Size = new Size(56, 15);
             label_nombre.TabIndex = 15;
@@ -224,15 +232,16 @@
             // 
             // textBox_nombre
             // 
-            textBox_nombre.Location = new Point(192, 96);
+            textBox_nombre.Location = new Point(191, 96);
             textBox_nombre.Name = "textBox_nombre";
             textBox_nombre.Size = new Size(196, 23);
             textBox_nombre.TabIndex = 14;
+            toolTip_ayuda.SetToolTip(textBox_nombre, "Proporciona tu nombre real. Solo letras y espacios son permitidos, \r\nsin caracteres especiales o números.");
             // 
             // button_cancelar
             // 
             button_cancelar.Anchor = AnchorStyles.Right;
-            button_cancelar.Location = new Point(91, 252);
+            button_cancelar.Location = new Point(90, 252);
             button_cancelar.Name = "button_cancelar";
             button_cancelar.Size = new Size(95, 23);
             button_cancelar.TabIndex = 13;
@@ -244,11 +253,12 @@
             // 
             button_crear.Anchor = AnchorStyles.Left;
             button_crear.BackColor = Color.LightBlue;
-            button_crear.Location = new Point(192, 252);
+            button_crear.Location = new Point(191, 252);
             button_crear.Name = "button_crear";
             button_crear.Size = new Size(196, 23);
             button_crear.TabIndex = 12;
             button_crear.Text = "Crear cuenta";
+            toolTip_ayuda.SetToolTip(button_crear, "Haz clic en este botón para finalizar el proceso y crear tu cuenta. Asegúrate \r\nde que todos los campos estén completos y correctos antes de proceder.");
             button_crear.UseVisualStyleBackColor = false;
             button_crear.Click += button_crear_Click;
             // 
@@ -262,6 +272,13 @@
             pictureBox_logo.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox_logo.TabIndex = 1;
             pictureBox_logo.TabStop = false;
+            // 
+            // toolTip_ayuda
+            // 
+            toolTip_ayuda.IsBalloon = true;
+            toolTip_ayuda.ShowAlways = true;
+            toolTip_ayuda.Tag = "";
+            toolTip_ayuda.ToolTipIcon = ToolTipIcon.Info;
             // 
             // Form_SignIn
             // 
@@ -301,5 +318,6 @@
         private Button button_cancelar;
         private TextBox textBox_nombre;
         private Label label_nombre;
+        private ToolTip toolTip_ayuda;
     }
 }

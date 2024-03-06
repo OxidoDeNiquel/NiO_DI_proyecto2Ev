@@ -21,7 +21,7 @@ Este repositorio contiene una aplicación desarrollada en C# con Windows Forms, 
 ## Requisitos del Sistema
 
 - **Plataforma:** Windows
-- **Framework:** .NET Framework 4.5 o superior
+- **Framework:** .NET Framework 6 o superior
 - **Entorno de Desarrollo:** Visual Studio (se recomienda la versión 2019 o posterior)
 
 ## Instrucciones de Uso
